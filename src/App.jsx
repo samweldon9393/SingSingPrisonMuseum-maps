@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { FiPlay, FiPause } from "react-icons/fi";
 import "./style.css";
 
 const maps = [
@@ -23,10 +24,10 @@ function App() {
   }, [paused]);
 
   return (
-      <div>
+      <div className="slideshow-wrapper">
           <div className="controls">
-              <button onClick={() => setPaused(!paused)}>
-                  {paused ? "Play" : "Pause"}
+              <button onClick={() => setPaused(!paused)} className="icon-button">
+                  {paused ? <FiPlay size={28} /> : <FiPause size={28} />}
               </button>
           </div>
           <div className="slideshow-container">

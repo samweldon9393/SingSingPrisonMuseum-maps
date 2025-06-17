@@ -1,3 +1,7 @@
+.slideshow-wrapper {
+  position: relative;
+}
+
 .slideshow-container {
   position: relative;
   width: 100%;
@@ -32,9 +36,27 @@
 }
 
 .controls {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 1rem;
+  position: absolute;
+  bottom: 20px; /* or top: 20px if you prefer */
+  right: 20px;
+  z-index: 2;
+}
+
+
+.icon-button {
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  padding: 0.5rem;
+  border-radius: 50%;
   cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.2s ease;
+}
+
+.icon-button:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.icon-button svg {
+  color: #000;
 }
