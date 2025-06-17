@@ -16,14 +16,21 @@ function App() {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % images.length);
-    }, 3000); // Change slide every 3 seconds
+    }, 4000); // Change slide every 3 seconds
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="slideshow-container">
-      <img src={images[index]} alt={`Map ${index + 1}`} className="map-image" />
-    </div>
+      <div className="slideshow-container">
+      {images.map((src, i) => (
+          <img
+          key={i}
+          src={src}
+          alt={`Map ${i}`}
+          className={`slideshow-image ${i === index ? 'visible' : ''}`}
+          />
+      ))}
+      </div>
   );
 }
 
