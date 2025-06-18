@@ -1,19 +1,28 @@
 import { useState, useEffect } from "react";
 import { FiPlay, FiPause } from "react-icons/fi";
+
+/* TODO can I move the svg file into public dir? */
+import type { FunctionComponent, SVGProps } from "react";
+import { ReactComponent as Map1886 } from '../src/images/1886.svg';
+import { ReactComponent as Map1891 } from '../src/images/1891.svg';
+import { ReactComponent as Map1897 } from '../src/images/1897.svg';
+import { ReactComponent as Map1903 } from '../src/images/1903.svg';
+import { ReactComponent as Map1911 } from '../src/images/1911.svg';
+import { ReactComponent as Map1924 } from '../src/images/1924.svg';
 import "./style.css";
 
 type MapData = {
-  src: string;
+  src: string | FunctionComponent<SVGProps<SVGSVGElement>>;
   year: string;
 };
 
 const maps: MapData[] = [
-    { src: "./images/1886.jpg", year: "1886" },
-    { src: "./images/1891.jpg", year: "1891" },
-    { src: "./images/1897.jpg", year: "1897" },
-    { src: "./images/1903.jpg", year: "1903" },
-    { src: "./images/1911.jpg", year: "1911" },
-    { src: "./images/1924.jpg", year: "1924" }
+    { src: Map1886, year: "1886" },
+    { src: Map1891, year: "1891" },
+    { src: Map1897, year: "1897" },
+    { src: Map1903, year: "1903" },
+    { src: Map1911, year: "1911" },
+    { src: Map1924, year: "1924" }
 ];
 
 function App() {
@@ -34,16 +43,19 @@ function App() {
               <button onClick={() => setPaused(!paused)} className="icon-button">
                   {paused ? <FiPlay size={28} /> : <FiPause size={28} />}
               </button>
-          </div>
-          <div className="slideshow-container">
-              {maps.map((map, i) => (
-                  <img
+              </div>
+              {maps.map((map, i) => {
+                  const MapComponent = map.src;
+                  return (
+                      <div
                       key={i}
-                      src={map.src}
-                      alt={`Map from ${map.year}`}
-                      className={`slideshow-image ${i === index ? 'visible' : ''}`}
-                  />
-              ))}
+                      className={`slideshow-image ${i === index ? "visible" : ""}`}
+                      >
+                      <MapComponent />
+                      </div>
+                  );
+              })}
+          <div className="slideshow-container">
               <div className="caption-banner">
                   <h2><strong>{maps[index].year}</strong></h2>
               </div>
