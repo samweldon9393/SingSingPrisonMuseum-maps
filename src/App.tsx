@@ -2,7 +2,12 @@ import { useState, useEffect } from "react";
 import { FiPlay, FiPause } from "react-icons/fi";
 import "./style.css";
 
-const maps = [
+type MapData = {
+  src: string;
+  year: string;
+};
+
+const maps: MapData[] = [
     { src: "./images/1886.jpg", year: "1886" },
     { src: "./images/1891.jpg", year: "1891" },
     { src: "./images/1897.jpg", year: "1897" },
@@ -19,7 +24,7 @@ function App() {
     if (paused) return; // Skip interval if paused
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % maps.length);
-    }, 4000); // Change slide every 4 seconds
+    }, 3000); // Change slide every 3 seconds
     return () => clearInterval(interval);
   }, [paused]);
 
