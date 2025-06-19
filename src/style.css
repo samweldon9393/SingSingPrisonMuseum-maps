@@ -70,8 +70,24 @@
   color: #000;
 }
 
+/* Region Effects */
+
 #DeathHouse:hover,
 #CellBlock:hover {
-  fill: rgba(255, 0, 0, 0.3);
+  fill: rgba(255, 255, 255, 0.9);
   cursor: pointer;
+}
+
+/* Style all paths with an id */
+svg path[id] {
+  stroke: orange;
+  stroke-width: 4;
+  fill: transparent;
+  transition: fill 0.2s ease-in-out;
+}
+
+/* On hover, apply glow effect */
+svg path[id]:hover {
+  fill: orange !important;
+  fill-opacity: 0.5 !important;
 }
