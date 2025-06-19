@@ -69,3 +69,9 @@
 .icon-button svg {
   color: #000;
 }
+
+#DeathHouse:hover,
+#CellBlock:hover {
+  fill: rgba(255, 0, 0, 0.3);
+  cursor: pointer;
+}
