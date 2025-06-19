@@ -1,5 +1,4 @@
 {
-    "DeathHouse" : "614 executions by electrocution took place between 1891 and 1963. Eight of those executions were women, famously including the controversial, politically motivated killing of Julius and Ethel Rosenberg for allegedly leaking nuclear secrets to the Soviet Union.",
-    "CellBlock" : "Temp text"
-
+    "DeathHouse" : "/images/1929/DeathHouse.png",
+    "CellBlock" : "/images/1929/CellBlock.png"
 }

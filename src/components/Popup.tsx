@@ -10,14 +10,17 @@ type Props = {
 };
 
 const Popup: React.FC<Props> = ({ regionId, onClose }) => {
+  const imageUrl = captionMap[regionId]
   return (
-    <div className="popup-overlay">
-      <div className="popup-box">
-        <button className="popup-close" onClick={onClose}>×</button>
-        <h3><strong>{regionId}</strong></h3>
-        <p>{captionMap[regionId] || "No info available."}</p>
+      <div className="popup">
+          <button className="close-button" onClick={onClose}>×</button>
+          <h3>{regionId}</h3>
+          {imageUrl ? (
+              <img src={imageUrl} alt={regionId} className="popup-image" />
+          ) : (
+          <p>No image available.</p>
+          )}
       </div>
-    </div>
   );
 };
 
