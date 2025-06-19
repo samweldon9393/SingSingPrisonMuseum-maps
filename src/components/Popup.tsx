@@ -1,6 +1,8 @@
 // src/components/Popup.tsx
 import React from 'react';
 import './popup.css';
+import captions from '../captions.json';
+const captionMap = captions as { [key: string]: string };
 
 type Props = {
   regionId: string;
@@ -12,8 +14,8 @@ const Popup: React.FC<Props> = ({ regionId, onClose }) => {
     <div className="popup-overlay">
       <div className="popup-box">
         <button className="popup-close" onClick={onClose}>×</button>
-        <h3>{regionId}</h3>
-        <p>This is some info about <strong>{regionId}</strong>. You can customize this text.</p>
+        <h3><strong>{regionId}</strong></h3>
+        <p>{captionMap[regionId] || "No info available."}</p>
       </div>
     </div>
   );

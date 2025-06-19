@@ -10,6 +10,8 @@ import { ReactComponent as Map1911 } from '../src/images/1911.svg';
 import Map1924 from "./components/Map1924";
 import "./style.css";
 
+import Popup from './components/Popup';
+
 type MapData = {
   Component: React.FC<any>;
   year: string;
@@ -27,11 +29,7 @@ const maps: MapData[] = [
 function App() {
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
-
-  const handleRegionClick = (regionId: string) => {
-    console.log(`Clicked on region: ${regionId}`);
-    // You can open a modal, show info, etc.
-  };
+  const [activeRegion, setActiveRegion] = useState<string | null>(null);
 
   useEffect(() => {
     if (paused) return; // Skip interval if paused
@@ -58,7 +56,7 @@ function App() {
                           className={`slideshow-image ${isActive ? "visible" : ""}`}
                       >
                       {map.year === "1924" ? (
-                          <MapComponent onRegionClick={handleRegionClick} />
+                          <MapComponent onRegionClick={setActiveRegion} />
                       ) : (
                       <MapComponent />
                       )}
@@ -69,6 +67,9 @@ function App() {
                   <h2><strong>{maps[index].year}</strong></h2>
               </div>
           </div>
+          {activeRegion && (
+              <Popup regionId={activeRegion} onClose={() => setActiveRegion(null)} />
+          )}
       </div>
   );
 }
