@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 
 // Play button
 import { FiPlay, FiPause } from "react-icons/fi";
+// Swipe functionality
+import { useSwipeable } from 'react-swipeable';
 import type { FunctionComponent, SVGProps } from "react";
 // Maps
 import { ReactComponent as Map1886 } from '../src/images/1886.svg';
@@ -41,6 +43,20 @@ function App() {
     return () => clearInterval(interval);
   }, [paused]);
 
+  // Swipe functionality
+  const swipeHandlers = useSwipeable({
+      onSwipedLeft: () => {
+          setIndex((prev) => (prev + 1) % maps.length);
+          setPaused(true); // pause autoplay on manual swipe
+      },
+      onSwipedRight: () => {
+          setIndex((prev) => (prev - 1 + maps.length) % maps.length);
+          setPaused(true);
+      },
+      trackMouse: true // allows swipe with mouse drag too
+  });
+
+
   return (
       <div className="slideshow-wrapper">
           <div className="controls">
@@ -51,7 +67,7 @@ function App() {
                   {<FiPause size={28} />}
               </button>
               </div>
-          <div className="slideshow-container">
+          <div className="slideshow-container" {...swipeHandlers}>
               {maps.map((map, i) => {
                   const MapComponent = map.Component;
                   const isActive = i === index;
@@ -70,6 +86,10 @@ function App() {
               })}
               <div className="caption-banner">
                   <h2><strong>{maps[index].year}</strong></h2>
+                  <div className="banner-swipe">
+                    <div><i>Swipe for Next / Prev Year</i></div>
+                    <div><i>Click Yellow Sections For Information</i></div>
+                  </div>
               </div>
           </div>
           {activeRegion && (
