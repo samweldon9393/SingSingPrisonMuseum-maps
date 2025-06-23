@@ -19,6 +19,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 16px;
   opacity: 0;
   transition: opacity 1s ease;
 }
@@ -46,8 +47,8 @@
 
 .controls {
   position: absolute;
-  bottom: 20px; /* or top: 20px if you prefer */
-  right: 20px;
+  bottom: 20px;
+  right: 240px;
   z-index: 2;
 }
 
@@ -55,6 +56,7 @@
 .icon-button {
   background: rgba(255, 255, 255, 0.5);
   border: none;
+  margin: 0.3rem;
   padding: 0.5rem;
   border-radius: 50%;
   cursor: pointer;
@@ -80,14 +82,16 @@
 
 /* Style all paths with an id */
 svg path[id] {
-  stroke: orange;
-  stroke-width: 4;
+  fill: yellow !important;
+  fill-opacity: 0.2 !important;
+  stroke: yellow;
+  stroke-width: 8;
   fill: transparent;
   transition: fill 0.2s ease-in-out;
 }
 
 /* On hover, apply glow effect */
 svg path[id]:hover {
-  fill: orange !important;
+  fill: yellow !important;
   fill-opacity: 0.5 !important;
 }

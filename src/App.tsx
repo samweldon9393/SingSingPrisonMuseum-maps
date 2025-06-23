@@ -1,17 +1,19 @@
 import { useState, useEffect } from "react";
-import { FiPlay, FiPause } from "react-icons/fi";
 
+// Play button
+import { FiPlay, FiPause } from "react-icons/fi";
 import type { FunctionComponent, SVGProps } from "react";
+// Maps
 import { ReactComponent as Map1886 } from '../src/images/1886.svg';
 import { ReactComponent as Map1891 } from '../src/images/1891.svg';
 import { ReactComponent as Map1897 } from '../src/images/1897.svg';
 import { ReactComponent as Map1903 } from '../src/images/1903.svg';
 import { ReactComponent as Map1911 } from '../src/images/1911.svg';
 import Map1924 from "./components/Map1924";
+import Popup from './components/Popup';
 import "./style.css";
 
-import Popup from './components/Popup';
-
+// map react components : year
 type MapData = {
   Component: React.FC<any>;
   year: string;
@@ -42,8 +44,11 @@ function App() {
   return (
       <div className="slideshow-wrapper">
           <div className="controls">
-              <button onClick={() => setPaused(!paused)} className="icon-button">
-                  {paused ? <FiPlay size={28} /> : <FiPause size={28} />}
+              <button onClick={() => setPaused(false)} className="icon-button">
+                  {<FiPlay size={28} />}
+              </button>
+              <button onClick={() => setPaused(true)} className="icon-button">
+                  {<FiPause size={28} />}
               </button>
               </div>
           <div className="slideshow-container">
