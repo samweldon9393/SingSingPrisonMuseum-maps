@@ -44,6 +44,11 @@ function App() {
     }, 2000); // Change slide every 2 seconds
     return () => clearInterval(interval);
   }, [paused]);
+  // Auto-clear popup when map changes
+  useEffect(() => {
+      setActiveRegion(null);
+  }, [index]);
+
 
   // Swipe functionality
   const swipeHandlers = useSwipeable({
