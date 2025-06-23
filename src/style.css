@@ -34,6 +34,7 @@
   max-width: 90vw;
   height: auto;
   width: auto;
+  border-radius: 15px; /* TODO do I like this?? */
 }
 
 
