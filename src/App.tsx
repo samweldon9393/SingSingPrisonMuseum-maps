@@ -12,6 +12,7 @@ import { ReactComponent as Map1897 } from '../src/images/1897.svg';
 import { ReactComponent as Map1903 } from '../src/images/1903.svg';
 import { ReactComponent as Map1911 } from '../src/images/1911.svg';
 import Map1924 from "./components/Map1924";
+import { ReactComponent as Map2025 } from '../src/images/2025.svg';
 import Popup from './components/Popup';
 import "./style.css";
 
@@ -27,7 +28,8 @@ const maps: MapData[] = [
     { Component: Map1897, year: "1897" },
     { Component: Map1903, year: "1903" },
     { Component: Map1911, year: "1911" },
-    { Component: Map1924, year: "1924" }
+    { Component: Map1924, year: "1924" },
+    { Component: Map2025, year: "2025" }
 ];
 
 function App() {
