@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import { FiPlay, FiPause } from "react-icons/fi";
 // Swipe functionality
 import { useSwipeable } from 'react-swipeable';
-import type { FunctionComponent, SVGProps } from "react";
 // Maps
 import { ReactComponent as Map1886 } from '../src/images/1886.svg';
 import { ReactComponent as Map1891 } from '../src/images/1891.svg';
