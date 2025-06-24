@@ -1,4 +1,10 @@
 {
-    "DeathHouse" : "/images/1929/DeathHouse.png",
-    "CellBlock" : "/images/1929/CellBlock.png"
+    "DeathHouse" : [
+        "/images/1929/DeathHouse.png",
+        "*Scientific American (1929)"
+    ],
+    "CellBlock" : [
+        "/images/1929/CellBlock.png",
+        "*Scientific American (1929)"
+    ]
 }

@@ -2,7 +2,7 @@
 import React from 'react';
 import './popup.css';
 import captions from '../captions.json';
-const captionMap = captions as { [key: string]: string };
+const captionMap = captions as { [key: string]: string[] };
 
 type Props = {
   regionId: string;
@@ -10,13 +10,16 @@ type Props = {
 };
 
 const Popup: React.FC<Props> = ({ regionId, onClose }) => {
-  const imageUrl = `${process.env.PUBLIC_URL}${captionMap[regionId]}`;
+  const imageUrl = `${process.env.PUBLIC_URL}${captionMap[regionId][0]}`;
   return (
       <div className="popup">
           <button className="close-button" onClick={onClose}>×</button>
           <h3>{regionId}</h3>
           {imageUrl ? (
+              <>
               <img src={imageUrl} alt={regionId} className="popup-image" />
+              <i>{captionMap[regionId][1]}</i>
+              </>
           ) : (
           <p>No image available.</p>
           )}
