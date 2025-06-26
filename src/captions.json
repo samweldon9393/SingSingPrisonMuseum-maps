@@ -18,5 +18,21 @@
     "Hospital" : [
         "/images/1933/Handbook/Medical.png",
         "* Handbook of American Prisons and Reformatories (1933)"
+    ],
+    "Foundry" : [
+        "/images/1910/StoveArticle.png",
+        "* New York Timmes (1910)"
+    ],
+    "StoveStorage" : [
+        "/images/1910/PerryStovePic.jpg",
+        "* Albany Institute of History and Art (stove c. 1889)"
+    ],
+    "Chapel" : [
+        "/images/1920/Chapel.png",
+        "* Gutenberg"
+    ],
+    "1886Cells" : [
+        "/images/Museum/OldCellBlock.png",
+        "* Sing Sing Prison Museum"
     ]
 }
