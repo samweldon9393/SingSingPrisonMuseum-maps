@@ -1,17 +1,17 @@
 {
-    "DeathHouse" : [
+    "Death House" : [
         "/images/1929/DeathHouse.png",
         "* Scientific American (1929)"
     ],
-    "CellBlock" : [
+    "Cell Block" : [
         "/images/1929/CellBlock.png",
         "* Scientific American (1929)"
     ],
-    "MattressShop" : [
+    "Mattress Shop" : [
         "/images/1933/Handbook/Shops.png",
         "* Handbook of American Prisons and Reformatories (1933)"
     ],
-    "WardensOffice" : [
+    "Warden's Office" : [
         "/images/1933/Handbook/PositionsAndSalaries.png",
         "* Handbook of American Prisons and Reformatories (1933)"
     ],
@@ -23,7 +23,7 @@
         "/images/1910/StoveArticle.png",
         "* New York Timmes (1910)"
     ],
-    "StoveStorage" : [
+    "Stove Storage" : [
         "/images/1910/PerryStovePic.jpg",
         "* Albany Institute of History and Art (stove c. 1889)"
     ],
@@ -31,7 +31,7 @@
         "/images/1920/Chapel.png",
         "* Gutenberg"
     ],
-    "1886Cells" : [
+    "Old Cells" : [
         "/images/Museum/OldCellBlock.png",
         "* Sing Sing Prison Museum"
     ]
