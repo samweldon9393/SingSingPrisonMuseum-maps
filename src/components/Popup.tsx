@@ -10,7 +10,9 @@ type Props = {
 };
 
 const Popup: React.FC<Props> = ({ regionId, onClose }) => {
-  const imageUrl = `${process.env.PUBLIC_URL}${captionMap[regionId][0]}`;
+  const caption = captionMap[regionId];
+  const imageUrl = caption ? `${process.env.PUBLIC_URL}${captionMap[regionId][0]}` : null;
+
   return (
       <div className="popup">
           <button className="close-button" onClick={onClose}>×</button>
