@@ -5,7 +5,7 @@ import { FiPlay, FiPause } from "react-icons/fi";
 // Swipe functionality
 import { useSwipeable } from 'react-swipeable';
 // Maps
-import { ReactComponent as Map1886 } from '../src/images/1886.svg';
+import Map1886 from "./components/Map1886";
 import { ReactComponent as Map1891 } from '../src/images/1891.svg';
 import { ReactComponent as Map1897 } from '../src/images/1897.svg';
 import { ReactComponent as Map1903 } from '../src/images/1903.svg';
@@ -82,7 +82,7 @@ function App() {
                           key={i}
                           className={`slideshow-image ${isActive ? "visible" : ""}`}
                       >
-                      {map.year === "1924" ? (
+                      {map.year === "1924" || "1886" ? (
                           <MapComponent onRegionClick={setActiveRegion} />
                       ) : (
                       <MapComponent />
