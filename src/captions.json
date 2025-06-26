@@ -1,10 +1,22 @@
 {
     "DeathHouse" : [
         "/images/1929/DeathHouse.png",
-        "*Scientific American (1929)"
+        "* Scientific American (1929)"
     ],
     "CellBlock" : [
         "/images/1929/CellBlock.png",
-        "*Scientific American (1929)"
+        "* Scientific American (1929)"
+    ],
+    "MattressShop" : [
+        "/images/1933/Handbook/Shops.png",
+        "* Handbook of American Prisons and Reformatories (1933)"
+    ],
+    "WardensOffice" : [
+        "/images/1933/Handbook/PositionsAndSalaries.png",
+        "* Handbook of American Prisons and Reformatories (1933)"
+    ],
+    "Hospital" : [
+        "/images/1933/Handbook/Medical.png",
+        "* Handbook of American Prisons and Reformatories (1933)"
     ]
 }
