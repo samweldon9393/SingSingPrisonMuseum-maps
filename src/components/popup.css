@@ -18,6 +18,11 @@
   border-radius: 6px;
 }
 
+.popup-image {
+  transform: rotate(0deg);
+  image-orientation: from-image; /* default — can be buggy */
+}
+
 .close-button {
   float: right;
   background: none;
