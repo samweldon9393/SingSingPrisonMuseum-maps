@@ -48,10 +48,15 @@ function App() {
         setActiveRegion(null);
     }, [index]);
 
-    // Pause when region is clicked
     const handleRegionClick = (regionId: string) => {
-        setPaused(true);
-        setActiveRegion(regionId);
+        if (regionId !== "image1"){ // image1 means click on non-region
+            console.log(regionId);
+            // Pause when region is clicked
+            setPaused(true);
+            setActiveRegion(regionId);
+        } else {
+            setActiveRegion(null);
+        }
     };
 
 
