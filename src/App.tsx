@@ -72,7 +72,7 @@ function App() {
               <button onClick={() => setPaused(true)} className="icon-button">
                   {<FiPause size={28} />}
               </button>
-              </div>
+          </div>
           <div className="slideshow-container" {...swipeHandlers}>
               {maps.map((map, i) => {
                   const MapComponent = map.Component;
