@@ -7,7 +7,7 @@ import { useSwipeable } from 'react-swipeable';
 // Maps
 import Map1886 from "./components/Map1886";
 import { ReactComponent as Map1891 } from '../src/images/1891.svg';
-import { ReactComponent as Map1897 } from '../src/images/1897.svg';
+import Map1897 from "./components/Map1897";
 import { ReactComponent as Map1903 } from '../src/images/1903.svg';
 import { ReactComponent as Map1911 } from '../src/images/1911.svg';
 import Map1924 from "./components/Map1924";
@@ -94,7 +94,7 @@ function App() {
                           key={i}
                           className={`slideshow-image ${isActive ? "visible" : ""}`}
                       >
-                      {map.year === "1924" || map.year === "1886" ? (
+                      {map.year === "1924" || map.year === "1886"  || map.year === "1897" ? (
                           <MapComponent onRegionClick={handleRegionClick} />
                       ) : (
                       <MapComponent />
