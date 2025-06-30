@@ -1,3 +1,9 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 .slideshow-wrapper {
   position: relative;
 }
@@ -19,7 +25,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 16px;
+  margin-top: 24px;
   opacity: 0;
   transition: opacity 1s ease;
 }
@@ -48,6 +54,21 @@
   font-family: sans-serif;
 }
 
+@media (max-width: 768px) {
+  .caption-banner {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .caption-banner h2 {
+    font-size: 1.5rem;
+  }
+
+  .banner-swipe {
+    font-size: 0.9rem;
+  }
+}
+
 .caption-banner h2 {
   margin: 0;
   font-size: 1.8rem;
@@ -67,12 +88,6 @@
   transform: translateX(-50%);
   display: flex;
   z-index: 2;
-}
-
-@media (max-width: 768px) {
-  .controls {
-    bottom: 80px;
-  }
 }
 
 .icon-button {
