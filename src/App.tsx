@@ -32,21 +32,28 @@ const maps: MapData[] = [
 ];
 
 function App() {
-  const [index, setIndex] = useState(0);
-  const [paused, setPaused] = useState(false);
-  const [activeRegion, setActiveRegion] = useState<string | null>(null);
+    const [index, setIndex] = useState(0);
+    const [paused, setPaused] = useState(false);
+    const [activeRegion, setActiveRegion] = useState<string | null>(null);
 
-  useEffect(() => {
-    if (paused) return; // Skip interval if paused
-    const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % maps.length);
-    }, 2000); // Change slide every 2 seconds
-    return () => clearInterval(interval);
-  }, [paused]);
-  // Auto-clear popup when map changes
-  useEffect(() => {
-      setActiveRegion(null);
-  }, [index]);
+    useEffect(() => {
+        if (paused) return; // Skip interval if paused
+        const interval = setInterval(() => {
+            setIndex((prev) => (prev + 1) % maps.length);
+        }, 2000); // Change slide every 2 seconds
+        return () => clearInterval(interval);
+    }, [paused]);
+    // Auto-clear popup when map changes
+    useEffect(() => {
+        setActiveRegion(null);
+    }, [index]);
+
+    // Pause when region is clicked
+    const handleRegionClick = (regionId: string) => {
+        setPaused(true);
+        setActiveRegion(regionId);
+    };
+
 
 
   // Swipe functionality
@@ -82,8 +89,8 @@ function App() {
                           key={i}
                           className={`slideshow-image ${isActive ? "visible" : ""}`}
                       >
-                      {map.year === "1924" || "1886" ? (
-                          <MapComponent onRegionClick={setActiveRegion} />
+                      {map.year === "1924" || map.year === "1886" ? (
+                          <MapComponent onRegionClick={handleRegionClick} />
                       ) : (
                       <MapComponent />
                       )}
