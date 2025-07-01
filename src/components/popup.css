@@ -2,8 +2,8 @@
 
 .popup {
   position: absolute;
-  top: 60px; /* below the year header */
-  left: 40px;
+  top: 10%; /* below the year header */
+  left: 5%;
   background: rgba(255, 255, 255, 0.95);
   border-radius: 8px;
   padding: 10px;

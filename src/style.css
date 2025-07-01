@@ -122,9 +122,10 @@ svg path[id] {
   fill: yellow !important;
   fill-opacity: 0.2 !important;
   stroke: yellow;
-  stroke-width: 8;
+  stroke-width: 6;
   fill: transparent;
   transition: fill 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 /* On hover, apply glow effect */

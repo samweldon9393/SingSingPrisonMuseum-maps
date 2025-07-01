@@ -1,8 +1,9 @@
 // src/components/Popup.tsx
 import React from 'react';
 import './popup.css';
-import captions from '../captions.json';
-const captionMap = captions as { [key: string]: string[] };
+import captions_en from '../captions.en.json';
+import captions_es from '../captions.es.json';
+const captionMap = captions_en as { [key: string]: string[] };
 
 type Props = {
   regionId: string;
