@@ -37,7 +37,7 @@ const maps: MapData[] = [
     { Component: Map2025, year: "2025" }
 ];
 
-function App() {
+function MainApp() {
     const [index, setIndex] = useState(0);
     const [paused, setPaused] = useState(false);
     const [activeRegion, setActiveRegion] = useState<string | null>(null);
@@ -96,7 +96,9 @@ function App() {
                   {<FiPause size={28} />}
               </button>
 
-              <button onClick={() => navigate('/')} className="icon-button">
+              <button onClick={() => {
+                  setActiveRegion(null); setPaused(true); setIndex(0); navigate('/'); 
+              }} className="icon-button">
                   <FiHome size={28} />
               </button>
           </div>
@@ -132,5 +134,5 @@ function App() {
   );
 }
 
-export default App;
+export default MainApp;
 

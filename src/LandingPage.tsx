@@ -13,7 +13,7 @@ const LandingPage = () => {
 
   return (
     <div className="landing-page">
-      <h1>Select Language / Seleccione idioma</h1>
+      <h1>Select Language / Seleccione Idioma</h1>
       <button onClick={() => handleSelect("en")}>English</button>
       <button onClick={() => handleSelect("es")}>Español</button>
     </div>
