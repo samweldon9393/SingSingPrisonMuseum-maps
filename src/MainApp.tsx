@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from 'react-router-dom';
 
 // Languages
 import { useLanguage } from "./LanguageContext";
@@ -40,6 +41,9 @@ function App() {
     const [index, setIndex] = useState(0);
     const [paused, setPaused] = useState(false);
     const [activeRegion, setActiveRegion] = useState<string | null>(null);
+    const navigate = useNavigate();
+
+    // Languages
     const { language } = useLanguage();
     const captionMap = language === "en" ? captionsEn : captionsEs;
 
@@ -92,7 +96,7 @@ function App() {
                   {<FiPause size={28} />}
               </button>
 
-              <button onClick={() => console.log("here") } className="icon-button">
+              <button onClick={() => navigate('/')} className="icon-button">
                   <FiHome size={28} />
               </button>
           </div>
