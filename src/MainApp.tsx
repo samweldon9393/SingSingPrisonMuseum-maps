@@ -122,8 +122,17 @@ function MainApp() {
               <div className="caption-banner">
                   <h2><strong>{maps[index].year}</strong></h2>
                   <div className="banner-swipe">
-                    <div><i>Swipe for Next / Prev Year</i></div>
-                    <div><i>Tap Yellow Sections For Information</i></div>
+                    {language === "en" ? (
+                        <>
+                            <div><i>Swipe for Next / Prev Year</i></div>
+                            <div><i>Tap Yellow Sections For Information</i></div>
+                        </>
+                    ) : (
+                        <>
+                            <div><i>Desliza para el año anterior o siguiente</i></div>
+                            <div><i>Toca las secciones amarillas para más información</i></div>
+                        </>
+                    )}
                   </div>
               </div>
           </div>
