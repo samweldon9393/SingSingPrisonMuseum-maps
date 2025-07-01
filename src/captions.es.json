@@ -1,7 +1,7 @@
 {
     "_comment:" : ["1886", ""],
     "Foundry" : [
-        "/images/1910/StoveArticle_es.png",
+        "/images/1910/StoveArticle_es.jpg",
         "* New York Timmes (1910)"
     ],
     "Stove Storage" : [
@@ -19,7 +19,7 @@
 
     "_comment:" : ["1897", ""],
     "Granite Cutting" : [
-        "/images/1894/Granite_es.png",
+        "/images/1894/Granite_es.jpg",
         "* New York Times (1894)"
     ],
     "Granite Polishing" : [
@@ -33,11 +33,11 @@
 
     "_comment:" : ["1924", ""],
     "Death House" : [
-        "/images/1929/DeathHouse_es.png",
+        "/images/1929/DeathHouse_es.jpg",
         "* Scientific American (1929)"
     ],
     "Cell Block" : [
-        "/images/1929/CellBlock_es.png",
+        "/images/1929/CellBlock_es.jpg",
         "* Scientific American (1929)"
     ],
     "Mattress Shop" : [
@@ -53,7 +53,7 @@
         "* Handbook of American Prisons and Reformatories (1933)"
     ],
     "Athletic Field" : [
-        "/images/1929/Baseball.png",
+        "/images/1929/Baseball_es.jpg",
         "* New York Times (1929)"
     ]
 }

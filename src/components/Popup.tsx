@@ -8,25 +8,26 @@ const captionMap = captions_en as { [key: string]: string[] };
 type Props = {
   regionId: string;
   onClose: () => void;
+  captionMap: { [key: string]: string[] }; // image and caption
 };
 
-const Popup: React.FC<Props> = ({ regionId, onClose }) => {
+const Popup: React.FC<Props> = ({ regionId, onClose, captionMap }) => {
   const caption = captionMap[regionId];
-  const imageUrl = caption ? `${process.env.PUBLIC_URL}${captionMap[regionId][0]}` : null;
+  const imageUrl = caption ? `${process.env.PUBLIC_URL}${caption[0]}` : null;
 
   return (
-      <div className="popup">
-          <button className="close-button" onClick={onClose}>×</button>
-          <h3>{regionId}</h3>
-          {imageUrl ? (
-              <>
-              <img src={imageUrl} alt={regionId} className="popup-image" />
-              <i>{captionMap[regionId][1]}</i>
-              </>
-          ) : (
-          <p>No image available.</p>
-          )}
-      </div>
+    <div className="popup">
+      <button className="close-button" onClick={onClose}>×</button>
+      <h3>{regionId}</h3>
+      {imageUrl ? (
+        <>
+          <img src={imageUrl} alt={regionId} className="popup-image" />
+          <i>{caption[1]}</i>
+        </>
+      ) : (
+        <p>No image available.</p>
+      )}
+    </div>
   );
 };
 
