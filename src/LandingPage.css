@@ -4,6 +4,7 @@
   align-items: center;
   height: 100vh;
   background: #cbb293;
+  background: linear-gradient(90deg,#cbb293 0%, #7A6C5B 100%);
   font-family: 'Georgia', serif;
   text-align: center;
   padding: 2rem;
@@ -53,7 +54,7 @@
 }
 
 .landing-page button {
-  background-color: #ddd5a0;
+  background-color: #cbb293;
   color: black;
   border: none;
   padding: 0.75rem 1.5rem;
