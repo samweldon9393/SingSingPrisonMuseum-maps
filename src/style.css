@@ -150,7 +150,7 @@ body, html {
 
 #DeathHouse:hover,
 #CellBlock:hover {
-  fill: rgba(255, 255, 255, 0.9);
+  fill: rgba(255, 255, 255, 1);
   cursor: pointer;
 }
 
@@ -159,7 +159,7 @@ svg path[id] {
   fill: #c88b31 !important;
   fill-opacity: 0.2 !important;
   stroke: #c88b31 ;
-  stroke-width: 3;
+  stroke-width: 7;
   fill: transparent;
   transition: fill 0.2s ease-in-out;
   cursor: pointer;
