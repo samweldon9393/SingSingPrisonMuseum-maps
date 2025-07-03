@@ -114,7 +114,8 @@ function MainApp() {
                           key={i}
                           className={`slideshow-image ${isActive ? "visible" : ""}`}
                       >
-                      {map.year === "1924" || map.year === "1886"  || map.year === "1897" ? (
+                      {map.year === "1924" || map.year === "1886"  || map.year === "1897" 
+                          || map.year === "2013" ? (
                           <MapComponent onRegionClick={handleRegionClick} />
                       ) : (
                       <MapComponent />

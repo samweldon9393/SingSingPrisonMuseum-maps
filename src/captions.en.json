@@ -55,5 +55,18 @@
     "Athletic Field" : [
         "/images/1929/Baseball.png",
         "* New York Times (1929)"
+    ],
+    "_comment:" : ["2013", ""],
+    "Library and School" : [
+        "/images/2013/HudsonLink.png",
+        "* SingSingPrisonMuseum.org"
+    ],
+    "Guard Shacks" : [
+        "/images/2013/GuardStrikes.png",
+        "* New York Times (2025)" 
+    ],
+    "Visitor Processing" : [
+        "/images/2013/NoVisitors.png",
+        "* Journal of Criminal Justice (2012)"
     ]
 }
