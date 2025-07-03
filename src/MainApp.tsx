@@ -11,13 +11,14 @@ import { FiPlay, FiPause, FiHome } from "react-icons/fi";
 import { useSwipeable } from 'react-swipeable';
 
 // Maps
+import Map1834 from "./components/Map1834";
 import Map1886 from "./components/Map1886";
 import { ReactComponent as Map1891 } from '../src/images/1891.svg';
 import Map1897 from "./components/Map1897";
 import { ReactComponent as Map1903 } from '../src/images/1903.svg';
 import { ReactComponent as Map1911 } from '../src/images/1911.svg';
 import Map1924 from "./components/Map1924";
-import { ReactComponent as Map2025 } from '../src/images/2025.svg';
+import Map2013 from "./components/Map2013";
 import Popup from './components/Popup';
 import "./style.css";
 
@@ -28,13 +29,14 @@ type MapData = {
 };
 
 const maps: MapData[] = [
+    { Component: Map1834, year: "1834" },
     { Component: Map1886, year: "1886" },
     { Component: Map1891, year: "1891" },
     { Component: Map1897, year: "1897" },
     { Component: Map1903, year: "1903" },
     { Component: Map1911, year: "1911" },
     { Component: Map1924, year: "1924" },
-    { Component: Map2025, year: "2025" }
+    { Component: Map2013, year: "2013" },
 ];
 
 function MainApp() {
