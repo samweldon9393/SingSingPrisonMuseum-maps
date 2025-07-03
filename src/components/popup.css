@@ -5,11 +5,16 @@
   top: 10%; /* below the year header */
   left: 5%;
   background: rgba(255, 255, 255, 0.95);
-  border-radius: 8px;
   padding: 10px;
   max-width: 300px;
+  width: 300px;
   z-index: 1000;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.popup-header {
+  cursor: pointer;
+  margin-top: -15px;
 }
 
 .popup-image {
