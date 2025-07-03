@@ -83,7 +83,7 @@ body, html {
   font-family: 'Georgia', serif;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .caption-banner {
     padding: 0.5rem 1rem;
     font-size: 1.2rem;
