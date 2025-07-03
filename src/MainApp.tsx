@@ -90,6 +90,7 @@ function MainApp() {
 
   return (
       <div className="slideshow-wrapper">
+          <div className="map-background"></div>
           <div className="controls">
               <button onClick={() => setPaused(false)} className="icon-button">
                   {<FiPlay size={28} />}

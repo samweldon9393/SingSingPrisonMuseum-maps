@@ -1,3 +1,5 @@
+/* copper: #c88b31 */
+
 body, html {
   margin: 0;
   padding: 0;
@@ -6,6 +8,28 @@ body, html {
 
 .slideshow-wrapper {
   position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-background {
+  position: absolute;
+  width: 150vw;
+  height: 50vh;
+  background: #c88b31;
+  top: 10%;
+  left: 15%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .map-background {
+      left: 5%;
+  }
 }
 
 .slideshow-container {
@@ -13,8 +37,7 @@ body, html {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: #cbb293;
-  background: linear-gradient(90deg,#cbb293 0%, #7A6C5B 100%);
+  background: #EAEAEA;
 }
 
 .slideshow-image {
@@ -29,11 +52,12 @@ body, html {
   margin-top: 24px;
   opacity: 0;
   transition: opacity 1s ease;
+  z-index: 2;
 }
 
 .slideshow-image.visible {
   opacity: 1;
-  z-index: 1;
+  z-index: 3;
 }
 
 .slideshow-image svg {
@@ -41,7 +65,6 @@ body, html {
   max-width: 90vw;
   height: auto;
   width: auto;
-  border-radius: 15px; /* TODO do I like this?? */
 }
 
 
@@ -88,15 +111,14 @@ body, html {
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  z-index: 2;
+  z-index: 4;
 }
 
 .icon-button {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.8);
   border: none;
   margin: 0.3rem;
   padding: 0.5rem;
-  border-radius: 50%;
   cursor: pointer;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: background 0.2s ease;
@@ -120,10 +142,10 @@ body, html {
 
 /* Style all paths with an id */
 svg path[id] {
-  fill: yellow !important;
+  fill: #c88b31 !important;
   fill-opacity: 0.2 !important;
-  stroke: yellow;
-  stroke-width: 6;
+  stroke: #c88b31 ;
+  stroke-width: 3;
   fill: transparent;
   transition: fill 0.2s ease-in-out;
   cursor: pointer;
@@ -131,6 +153,6 @@ svg path[id] {
 
 /* On hover, apply glow effect */
 svg path[id]:hover {
-  fill: yellow !important;
+  fill: #c88b31 !important;
   fill-opacity: 0.5 !important;
 }
