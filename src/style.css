@@ -98,7 +98,11 @@ body, html {
   }
 
   .controls {
-      margin-bottom: 4rem;
+    margin-bottom: 8rem;
+  }
+  
+  .slideshow-container {
+    margin-bottom: 4rem;
   }
 }
 
