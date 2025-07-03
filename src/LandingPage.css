@@ -22,7 +22,7 @@
   position: absolute;
   width: 95vw;
   height: 65vh;
-  background: #ADD5F3;
+  background: #c88b31;
   top: 10%;
   left: -5%;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
@@ -97,6 +97,11 @@
 
   .landing-page button {
     width: 100%;
+  }
+
+  .landing-background {
+    height: 40vh;
+    top: 20%;
   }
 }
 
