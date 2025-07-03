@@ -84,7 +84,7 @@
 
 @media (max-width: 600px) {
   .landing-card {
-    padding: 1.5rem 1.25rem;
+    margin-top: -1rem;
   }
 
   .landing-page h1 {
