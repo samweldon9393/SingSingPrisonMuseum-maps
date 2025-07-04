@@ -82,7 +82,6 @@ const DraggableWrapper: React.FC<DraggableWrapperProps> = ({
         left: position.x,
         top: position.y,
         zIndex: 1000,
-        cursor: isDragging ? 'grabbing' : 'default'
       }}
     >
       {children}
