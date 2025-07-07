@@ -124,7 +124,7 @@ function MainApp() {
                   );
               })}
               <div className="caption-banner">
-                  <h2><strong>{maps[index].year}</strong></h2>
+                  <h2 className="banner-year"><strong>{maps[index].year}</strong></h2>
                   <div className="banner-swipe">
                     {language === "en" ? (
                         <>
