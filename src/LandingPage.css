@@ -3,12 +3,12 @@
   justify-content: center;
   align-items: center;
   height: auto;
-  background: #EAEAEA;
+  background: #F5F5F5;
   text-align: center;
 }
 
 .landing-card {
-  background: #EAEAEA;
+  background: #F5F5F5;
   padding: 2rem 3rem;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   max-width: 500px;
