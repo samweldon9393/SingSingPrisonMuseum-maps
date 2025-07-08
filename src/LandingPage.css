@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: auto;
+  height: 100vh;
   background: #F5F5F5;
   text-align: center;
 }
@@ -17,7 +17,7 @@
 }
 
 .title-heading {
-  font-family: 'Monument Grotesk Semi Mono';
+  font-family: 'Georgia', serif;
 }
 
 .landing-background {
@@ -39,7 +39,6 @@
 
 .subheading {
   font-size: 1rem;
-  margin-top: -1.8rem;
   margin-bottom: 1rem;
   color: #6a5d4d;
 }
@@ -94,6 +93,7 @@
 
   .landing-page h1 {
     font-size: 1.5rem;
+    height: auto;
   }
 
   .lang-buttons {
