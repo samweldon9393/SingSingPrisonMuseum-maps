@@ -65,6 +65,7 @@ const DraggableWrapper: React.FC<DraggableWrapperProps> = ({
 
   const handleTouchMove = (e: TouchEvent) => {
     if (!isDragging) return;
+    e.preventDefault(); // Prevent scrolling and touch behaviors
     const touch = e.touches[0];
     setPosition({
       x: touch.clientX - dragOffset.x,
@@ -84,9 +85,11 @@ const DraggableWrapper: React.FC<DraggableWrapperProps> = ({
     if (isDragging) {
       document.addEventListener('mousemove', handleMouseMove);
       document.addEventListener('mouseup', handleMouseUp);
-      document.addEventListener('touchmove', handleTouchMove);
+      document.addEventListener('touchmove', handleTouchMove, { passive: false });
       document.addEventListener('touchend', handleTouchEnd);
       document.body.style.userSelect = 'none'; // Prevent text selection
+      document.body.style.touchAction = 'none'; // Disable touch behaviors
+      document.body.style.overflow = 'hidden'; // Prevent scrolling
       
       return () => {
         document.removeEventListener('mousemove', handleMouseMove);
@@ -94,6 +97,8 @@ const DraggableWrapper: React.FC<DraggableWrapperProps> = ({
         document.removeEventListener('touchmove', handleTouchMove);
         document.removeEventListener('touchend', handleTouchEnd);
         document.body.style.userSelect = '';
+        document.body.style.touchAction = '';
+        document.body.style.overflow = '';
       };
     }
   }, [isDragging, dragOffset]);
