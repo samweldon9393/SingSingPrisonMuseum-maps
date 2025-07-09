@@ -35,6 +35,15 @@
         "/images/1855/PrisonersLinedUp.jpg",
         "* nyackboatcharter.com"
     ],
+    "Shoe Shop" : [
+        "/images/Factories/ShoeFactory.jpeg",
+        "* Ossining Historical Society (1935)" 
+    ],
+    "Print Shop" : [
+        "/images/1920Program/PrintShop.jpg",
+        "* Museum Collection (1920)" 
+    ],
+
 
     "_comment:" : ["1924", ""],
     "Death House" : [
@@ -61,10 +70,16 @@
         "/images/1929/Baseball.png",
         "* New York Times (1929)"
     ],
-    "Shoe Shop" : [
-        "/images/Factories/ShoeFactory.jpeg",
-        "* Ossining Historical Society (1935)" 
+    "Auto School" : [
+        "/images/1920Program/AutoSchool.jpg",
+        "* Museum Collection (1920)" 
     ],
+    "Barber Shop" : [
+        "/images/1920Program/BarberShop.jpg",
+        "* Museum Collection (1920)" 
+    ],
+
+
     "_comment:" : ["2013", ""],
     "Library and School" : [
         "/images/2013/HudsonLink.png",
