@@ -46,8 +46,8 @@
         "* Scientific American (1929)"
     ],
     "Mattress Shop" : [
-        "/images/1933/Handbook/Shops2.png",
-        "* Handbook of American Prisons and Reformatories (1933)"
+        "/images/Factories/MattressFactory.jpeg",
+        "* Ossining Historical Society (1935)" 
     ],
     "Warden's Office" : [
         "/images/1933/Handbook/PositionsAndSalaries.png",
@@ -60,6 +60,10 @@
     "Athletic Field" : [
         "/images/1929/Baseball.png",
         "* New York Times (1929)"
+    ],
+    "Shoe Shop" : [
+        "/images/Factories/ShoeFactory.jpeg",
+        "* Ossining Historical Society (1935)" 
     ],
     "_comment:" : ["2013", ""],
     "Library and School" : [
