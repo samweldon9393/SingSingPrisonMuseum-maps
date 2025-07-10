@@ -1,9 +1,14 @@
 {
     "_comment:" : ["1834", ""],
     "Hudson River" : [
-        "/images/1834/Hudson.png",
+        "/images/1834/Hudson_es.png",
         "* SingSingPrisonMuseum.org"
     ],
+    "Stone Cutters Shop" : [
+        "/images/1834/StoneCutters_es.png",
+        "* SingSingPrisonMuseum.org"
+    ],
+
     "_comment:" : ["1886", ""],
     "Foundry" : [
         "/images/1910/StoveArticle_es.jpg",
