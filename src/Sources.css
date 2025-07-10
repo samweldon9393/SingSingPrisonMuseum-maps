@@ -1,0 +1,217 @@
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  line-height: 1.6;
+  color: #1a202c;
+  font: "Monument Grotesk Semi Mono", sans-serif;
+}
+
+.content {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font: "Monument Grotesk", sans-serif;
+  color: #1a202c;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.header p {
+  font-size: 1.125rem;
+  font: "Monument Grotesk Semi Mono", sans-serif;
+  color: #4a5568;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.home-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  margin-top: -1rem;
+}
+  
+.icon-button:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transform: scale(1.2);
+  transition: ease-in-out .3s;
+}
+
+.sources-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.source-card {
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  padding: 24px;
+  transition: all 0.2s ease;
+}
+
+.source-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.source-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.source-icon {
+  font-size: 1.5rem;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.source-content {
+  flex: 1;
+}
+
+.source-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.source-type {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #718096;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.source-year {
+  font-size: 0.875rem;
+  color: #718096;
+}
+
+.source-year::before {
+  content: '•';
+  margin-right: 8px;
+  color: #cbd5e0;
+}
+
+.source-year::after {
+  content: '📅';
+  margin-left: 8px;
+}
+
+.citation {
+  margin-bottom: 16px;
+}
+
+.citation p {
+  margin: 8px 0;
+}
+
+.citation .authors {
+  font-weight: 600;
+  color: #1a202c;
+}
+
+.citation .title {
+  color: #2d3748;
+  font-weight: 500;
+}
+
+.citation .publication {
+  color: #4a5568;
+  font-style: italic;
+}
+
+.citation .doi,
+.citation .isbn {
+  font-size: 0.875rem;
+  color: #718096;
+}
+
+.source-link {
+  padding-top: 16px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.source-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #3182ce;
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color 0.2s ease;
+}
+
+.source-link a:hover {
+  color: #2c5282;
+}
+
+.source-link a::before {
+  content: '🔗';
+}
+
+.source-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #e2e8f0;
+  flex-shrink: 0;
+  text-align: right;
+  min-width: 60px;
+}
+
+.footer {
+  margin-top: 48px;
+  text-align: center;
+}
+
+.footer-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #718096;
+  font-size: 0.875rem;
+}
+
+.footer-content::before {
+  content: '📄';
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 32px 16px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .source-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .source-number {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+}
