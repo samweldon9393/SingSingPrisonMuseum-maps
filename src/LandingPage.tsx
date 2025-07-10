@@ -1,6 +1,7 @@
 // src/LandingPage.tsx
 import { useNavigate } from "react-router-dom";
 import { useLanguage } from "./LanguageContext";
+import { IoInformation } from "react-icons/io5";
 import "./LandingPage.css";
 
 const LandingPage = () => {
@@ -12,10 +13,21 @@ const LandingPage = () => {
     navigate("/map");
   };
 
+  const handleInfo = () => {
+    navigate("/sources");
+  }
+
   return (
       <div className="landing-page">
           <div className="landing-background"></div>
           <div className="landing-card">
+            <div className="info-card">
+              <div className="info-button">
+                <button onClick={() => handleInfo()}>
+                      {<IoInformation size={28}/>}
+                </button>
+              </div>
+              </div>
             <h1 className="title-heading">200 Years of Sing Sing</h1>
             <p className="subheading">
               Explore the rich history of one of America's most iconic prisons.

@@ -3,12 +3,12 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #F5F5F5;
+  background: #f8fafc;
   text-align: center;
 }
 
 .landing-card {
-  background: #F5F5F5;
+  background: #f8fafc;
   padding: 2rem 3rem;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   max-width: 500px;
@@ -57,6 +57,31 @@
   color: #574731;
 }
 
+.info-card {
+  background: transparent;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+}
+
+.info-button {
+  margin-top: -1rem;
+  margin-right: -2rem;
+}
+
+.info-button button {
+  background: transparent;
+  border: 0rem; 
+  margin: 0rem;
+  padding: 0rem;
+}
+
+.info-button button:hover {
+  transform: scale(1.5);
+  transition: ease-in-out .3s;
+  cursor: pointer;
+}
+
 .lang-buttons {
   display: flex;
   justify-content: center;
@@ -67,7 +92,7 @@
   margin-top: -1.7rem;
 }
 
-.landing-page button {
+.lang-buttons button {
   background-color: #c88b31;
   color: black;
   border: none;
@@ -77,12 +102,12 @@
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.landing-page button:hover {
+.lang-buttons button:hover {
   background-color: #fdfde7;
   transform: scale(1.05);
 }
 
-.landing-page button:active {
+.lang-buttons button:active {
   transform: scale(0.98);
 }
 
