@@ -12,12 +12,12 @@
 
     "_comment:" : ["1886", ""],
     "Foundry" : [
-        "/images/1910/StoveArticle.png",
-        "* New York Timmes (1910)"
-    ],
-    "Stove Storage" : [
         "/images/1910/PerryStovePic.jpg",
         "* Albany Institute of History and Art (stove c. 1889)"
+    ],
+    "Stove Storage" : [
+        "/images/1910/StoveArticle.png",
+        "* New York Timmes (1910)"
     ],
     "Chapel" : [
         "/images/1920/Chapel.png",
@@ -37,9 +37,9 @@
         "/images/1894/GranitePic.png",
         "* SingSingPrisonMuseum.org"
     ],
-    "Illustration" : [
-        "/images/1855/PrisonersLinedUp.jpg",
-        "* nyackboatcharter.com"
+    "Chapel Interior" : [
+        "/images/1920Program/Chapel.jpg",
+        "* Museum Collection (1920)"
     ],
     "Shoe Shop" : [
         "/images/Factories/ShoeFactory.jpeg",
@@ -69,8 +69,8 @@
         "* Handbook of American Prisons and Reformatories (1933)"
     ],
     "Hospital" : [
-        "/images/1933/Handbook/Medical.png",
-        "* Handbook of American Prisons and Reformatories (1933)"
+        "/images/1920Program/Hospital.jpg",
+        "* Museum Collection (1920)"
     ],
     "Athletic Field" : [
         "/images/1929/Baseball.png",
