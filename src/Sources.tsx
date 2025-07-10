@@ -7,9 +7,9 @@ import { useNavigate } from 'react-router-dom';
 interface Source {
   id: number;
   type?: string;
-  title: string;
+  title?: string;
   authors: string[];
-  year: number;
+  year?: number;
   publication?: string;
   volume?: string;
   issue?: string;
@@ -93,8 +93,7 @@ const Sources: React.FC = () => {
         <div className="header">
           <h1>Research Sources</h1>
           <p>
-            A comprehensive bibliography of sources used in this research project, 
-            formatted according to academic standards.
+            A comprehensive bibliography of sources used in this project. 
           </p>
         </div>
         <div className="home-button">

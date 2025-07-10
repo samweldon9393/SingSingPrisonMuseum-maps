@@ -1,0 +1,99 @@
+[
+    {
+      "id": 1,
+      "type": "website",
+      "title": "Museum Website",
+      "authors": ["Sing Sing Prison Museum"],
+      "url": "https://www.singsingprisonmuseum.org/",
+      "accessDate": "2025-07-10",
+      "year": 2025
+    },
+    {
+      "id": 2,
+      "type": "journal",
+      "title": "Dislocations of the Self: Eliza Farnham at Sing Sing Prison",
+      "authors": ["Janet Floyd"],
+      "publication": "Journal of American Studies",
+      "year": 2006,
+      "volume": "40",
+      "issue": "2",
+      "url": "https://www.jstor.org/stable/27557794"
+    },
+    {
+      "id": 3,
+      "type": "website",
+      "title": "Sing Sing Prison: Up the River",
+      "authors": ["Nyak Boat Charter"],
+      "url": "https://www.nyackboatcharter.com/post/sing-sing-prison-up-the-river",
+      "accessDate": "2025-07-10",
+      "year": 2022
+    },
+    {
+      "id": 4,
+      "type": "book",
+      "title": "Handbook of American Prisons and Reformatories: Vol. 1",
+      "authors": ["William B. & F. Lovell Bixby", "William T. Root"],
+      "publisher": "Osborne Association",
+      "year": 1933,
+      "isbn": "B0034JXRDG"
+    },
+    {
+      "id": 5,
+      "type": "journal",
+      "title": "Sustainable Innovation in the Digital Age",
+      "authors": ["Dr. James Wilson", "Dr. Maria Garcia", "Prof. David Lee"],
+      "publication": "Environmental Technology Review",
+      "year": 2023,
+      "volume": "28",
+      "issue": "12",
+      "pages": "445-462",
+      "doi": "10.5678/etr.2023.28.12.445",
+      "url": "https://doi.org/10.5678/etr.2023.28.12.445"
+    },
+    {
+      "id": 6,
+      "type": "website",
+      "title": "How Granite Is Used at Sing Sing",
+      "authors": ["New York Times"],
+      "url": "https://www.nytimes.com/1894/09/14/archives/how-granite-is-used-at-sing-sing.html",
+      "accessDate": "2025-07-10",
+      "year": 1894 
+    },
+    {
+      "id": 7,
+      "type": "website",
+      "title": "SECRETS OF SING SING PRISON TOLD BY A FORMER OFFCIAL; Recollections of Ferdinand Ward's Stay There and Other Interesting Reminiscences.",
+      "authors": ["New York Times"],
+      "url": "https://www.nytimes.com/1910/07/03/archives/secrets-of-sing-sing-prison-told-by-a-former-offcial-recollections.html",
+      "accessDate": "2025-07-10",
+      "year": 1910 
+    },
+    {
+      "id": 8,
+      "type": "website",
+      "title": "Happy Home Parlor Stove",
+      "authors": ["Albany Institute of History & Art"],
+      "url": "https://www.albanyinstitute.org/collection/details/happy-home-parlor-stove#&gid=1&pid=1",
+      "accessDate": "2025-07-10",
+      "year": 1889 
+    },
+    {
+      "id": 9,
+      "type": "journal",
+      "title": "The Mutual Welfare League at Sing Sing",
+      "authors": ["Unknown"],
+      "publication": "Journal of the American Institute of Criminal Law and Criminology",
+      "volume": "6",
+      "issue": "4",
+      "year": 0,
+      "url": "https://www.jstor.org/stable/43893548"
+    },
+    {
+      "id": 10,
+      "type": "book",
+      "title": "Plans and Illustrations of Prisons and Reformatories",
+      "authors": ["Hastings H. Hart, LL.D."],
+      "publisher": "The Russell Sage Foundation",
+      "year": 1922
+    }
+]
