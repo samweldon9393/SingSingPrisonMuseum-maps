@@ -13,22 +13,21 @@
      id=&quot;layer1&quot;&gt;
     <path
    d="m 114.85028,1377.1236 -3.36485,124.1613 1016.18607,12.1727 -1.6824,-138.7685 z"
-   id="Old Cells"
-   style="stroke-width:1.03419">
+   id="Old Cells">
   <title
      id="title1">Old Cells</title>
 </path>
 <path
-   d="m 337.61749,966.23353 7.04625,-468.26424 597.16479,9.96316 -8.80734,460.79119 -77.50784,2.4901 1.76109,-348.70772 -429.81768,-2.49011 -5.28421,351.19783 z"
-   id="Stone Cutters Shop"
-   style="stroke-width:1.14682">
+   style="fill:#000000;fill-opacity:0"
+   d="m 436.79754,962.06824 0.6187,-342.75614 414.52458,2.47477 0.61869,345.23092 77.95537,-1.23739 1.85608,-462.78266 -574.76617,-3.71216 -0.6187,463.40136 z"
+   id="Stone Cutters Shop">
   <title
      id="title2">Stone Cutters Shop</title>
 </path>
 <path
-   d="M -5.2185252,125.2446 1627.8808,122.63534 1626.1707,0 H -1.7984219 Z"
-   id="Hudson River"
-   style="stroke-width:0.809554">
+   style="fill:#000000;fill-opacity:0"
+   d="M 42.689845,117.55175 1613.5524,123.73868 1612.315,0.6186934 H -0.6186934 L 1.2373868,118.78913 Z"
+   id="Hudson River">
   <title
      id="title3">Hudson River</title>
 </path>
