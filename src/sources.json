@@ -2,6 +2,15 @@
     {
       "id": 1,
       "type": "website",
+      "title": "Sanborn Maps",
+      "authors": ["Library of Congress"],
+      "url": "https://www.loc.gov/collections/sanborn-maps/about-this-collection/",
+      "accessDate": "2025-07-10",
+      "year": 1924
+    },
+    {
+      "id": 2,
+      "type": "website",
       "title": "Museum Website",
       "authors": ["Sing Sing Prison Museum"],
       "url": "https://www.singsingprisonmuseum.org/",
@@ -9,7 +18,7 @@
       "year": 2025
     },
     {
-      "id": 2,
+      "id": 3,
       "type": "journal",
       "title": "Dislocations of the Self: Eliza Farnham at Sing Sing Prison",
       "authors": ["Janet Floyd"],
@@ -17,10 +26,11 @@
       "year": 2006,
       "volume": "40",
       "issue": "2",
+      "pages": "311-25",
       "url": "https://www.jstor.org/stable/27557794"
     },
     {
-      "id": 3,
+      "id": 4,
       "type": "website",
       "title": "Sing Sing Prison: Up the River",
       "authors": ["Nyak Boat Charter"],
@@ -29,7 +39,7 @@
       "year": 2022
     },
     {
-      "id": 4,
+      "id": 5,
       "type": "book",
       "title": "Handbook of American Prisons and Reformatories: Vol. 1",
       "authors": ["William B. & F. Lovell Bixby", "William T. Root"],
@@ -38,20 +48,19 @@
       "isbn": "B0034JXRDG"
     },
     {
-      "id": 5,
+      "id": 6,
       "type": "journal",
-      "title": "Sustainable Innovation in the Digital Age",
-      "authors": ["Dr. James Wilson", "Dr. Maria Garcia", "Prof. David Lee"],
-      "publication": "Environmental Technology Review",
-      "year": 2023,
-      "volume": "28",
-      "issue": "12",
-      "pages": "445-462",
-      "doi": "10.5678/etr.2023.28.12.445",
-      "url": "https://doi.org/10.5678/etr.2023.28.12.445"
+      "title": "Sing Sing Past and Present",
+      "authors": ["Unknown"],
+      "publication": "Scientific American",
+      "volume": "140",
+      "issue": "2",
+      "pages": "147",
+      "year": 1929,
+      "url": "https://www.jstor.org/stable/24965572"
     },
     {
-      "id": 6,
+      "id": 7,
       "type": "website",
       "title": "How Granite Is Used at Sing Sing",
       "authors": ["New York Times"],
@@ -60,7 +69,7 @@
       "year": 1894 
     },
     {
-      "id": 7,
+      "id": 8,
       "type": "website",
       "title": "SECRETS OF SING SING PRISON TOLD BY A FORMER OFFCIAL; Recollections of Ferdinand Ward's Stay There and Other Interesting Reminiscences.",
       "authors": ["New York Times"],
@@ -69,7 +78,7 @@
       "year": 1910 
     },
     {
-      "id": 8,
+      "id": 9,
       "type": "website",
       "title": "Happy Home Parlor Stove",
       "authors": ["Albany Institute of History & Art"],
@@ -78,22 +87,32 @@
       "year": 1889 
     },
     {
-      "id": 9,
+      "id": 10,
       "type": "journal",
       "title": "The Mutual Welfare League at Sing Sing",
       "authors": ["Unknown"],
       "publication": "Journal of the American Institute of Criminal Law and Criminology",
       "volume": "6",
       "issue": "4",
+      "pages": "618-23",
       "year": 0,
       "url": "https://www.jstor.org/stable/43893548"
     },
     {
-      "id": 10,
+      "id": 11,
       "type": "book",
       "title": "Plans and Illustrations of Prisons and Reformatories",
       "authors": ["Hastings H. Hart, LL.D."],
       "publisher": "The Russell Sage Foundation",
       "year": 1922
+    },
+    {
+      "id": 12,
+      "type": "website",
+      "title": "RUTH HITS 3 HOMERS IN SING SING GAME; Yankees Defeat Prison Nine in Exhibition, 17-3--Babe Plays First and Pitches.",
+      "authors": ["New York Times"],
+      "url": "https://www.nytimes.com/1929/09/06/archives/ruth-hits-3-homers-in-sing-sing-game-yankees-defeat-prison-nine-in.html",
+      "accessDate": "2025-07-10",
+      "year": 1929
     }
 ]
