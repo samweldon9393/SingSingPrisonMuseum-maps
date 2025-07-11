@@ -10,6 +10,27 @@
   max-width: 1024px;
   margin: 0 auto;
   padding: 48px 24px;
+  position: relative;
+  z-index: 3;
+}
+
+.sources-background {
+  position: absolute;
+  width: 150vw;
+  height: 50vh;
+  background: #c88b31;
+  top: 5%;
+  left: 15%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .sources-background {
+      left: 5%;
+      height: 30vh;
+      top: 25%;
+  }
 }
 
 .header {
