@@ -133,5 +133,15 @@
     height: 40vh;
     top: 20%;
   }
+  .landing-card {
+    margin-top: 5rem !important;
+  }
+
 }
 
+@media (max-width: 720px) {
+  .info-button {
+    margin-top: 1rem !important;
+    margin-right: 1rem;
+  }
+}
