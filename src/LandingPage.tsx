@@ -1,7 +1,7 @@
 // src/LandingPage.tsx
 import { useNavigate } from "react-router-dom";
 import { useLanguage } from "./LanguageContext";
-import { IoInformation } from "react-icons/io5";
+import { CiSquareInfo } from "react-icons/ci";
 import "./LandingPage.css";
 
 const LandingPage = () => {
@@ -24,7 +24,7 @@ const LandingPage = () => {
             <div className="info-card">
               <div className="info-button">
                 <button onClick={() => handleInfo()}>
-                      {<IoInformation size={28}/>}
+                      {<CiSquareInfo size={28}/>}
                 </button>
               </div>
               </div>
