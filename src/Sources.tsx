@@ -51,7 +51,7 @@ const Sources: React.FC = () => {
       case 'journal':
         return (
           <div className="citation">
-            <p className="authors">{authorsText} ({source.year}).</p>
+            <p className="authors">{authorsText}</p>
             <p className="title">{source.title}.</p>
             <p className="publication">{source.publication}, {source.volume}({source.issue}), {source.pages}.</p>
             {source.doi && (
@@ -63,7 +63,7 @@ const Sources: React.FC = () => {
       case 'book':
         return (
           <div className="citation">
-            <p className="authors">{authorsText} ({source.year}).</p>
+            <p className="authors">{authorsText}</p>
             <p className="title">{source.title}</p>
             <p className="publication">(pp. {source.pages}). {source.publisher}.</p>
             {source.isbn && (
@@ -75,7 +75,7 @@ const Sources: React.FC = () => {
       case 'website':
         return (
           <div className="citation">
-            <p className="authors">{authorsText} ({source.year}).</p>
+            <p className="authors">{authorsText}</p>
             <p className="title">{source.title}.</p>
             <p className="publication">Retrieved {source.accessDate}</p>
           </div>
@@ -87,6 +87,8 @@ const Sources: React.FC = () => {
   };
 
   return (
+    <>
+    <div className="sources-background"></div>
     <div className="container">
       <div className="content">
         {/* Header */}
@@ -150,6 +152,7 @@ const Sources: React.FC = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

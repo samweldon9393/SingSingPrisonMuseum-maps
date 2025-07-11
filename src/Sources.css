@@ -43,8 +43,8 @@
   
 .icon-button:hover {
   background: rgba(255, 255, 255, 0.5);
-  transform: scale(1.2);
-  transition: ease-in-out .3s;
+  transform: scale(1.1);
+  transition: ease-in-out .2s;
 }
 
 .sources-list {
