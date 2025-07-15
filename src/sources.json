@@ -114,5 +114,14 @@
       "url": "https://www.nytimes.com/1929/09/06/archives/ruth-hits-3-homers-in-sing-sing-game-yankees-defeat-prison-nine-in.html",
       "accessDate": "2025-07-10",
       "year": 1929
+    },
+    {
+      "id": 13,
+      "type": "book",
+      "title": "Images of America: Sing Sing Prison",
+      "authors": ["Guy Cheli"],
+      "publisher": "Arcadia Publishing",
+      "year": 2003,
+      "isbn": "978-0-7385-1206-8"
     }
 ]
