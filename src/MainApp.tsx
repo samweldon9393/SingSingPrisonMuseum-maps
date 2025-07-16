@@ -7,7 +7,7 @@ import captionsEn from "./captions.en.json";
 import captionsEs from "./captions.es.json";
 
 // Play button
-import { FiPlay, FiPause, FiHome } from "react-icons/fi";
+import { FiPlay, FiPause, FiHome, FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import { useSwipeable } from 'react-swipeable';
 
 // Maps
@@ -94,17 +94,26 @@ function MainApp() {
       <div className="slideshow-wrapper">
           <div className="map-background"></div>
           <div className="controls">
-              <button onClick={() => setPaused(false)} className="icon-button">
-                  {<FiPlay size={28} />}
+              <button onClick={() => {
+                  setPaused(true); setIndex((prev) => (prev - 1) % maps.length); 
+              }} className="icon-button">
+                  {<FiArrowLeft size={28} />}
               </button>
-              <button onClick={() => setPaused(true)} className="icon-button">
-                  {<FiPause size={28} />}
+
+              <button onClick={() => setPaused(prev => !prev)} className="icon-button">
+                  {paused ? <FiPlay size={28} /> : <FiPause size={28} />}
               </button>
 
               <button onClick={() => {
                   setActiveRegion(null); setPaused(true); setIndex(0); navigate('/'); 
               }} className="icon-button">
                   <FiHome size={28} />
+              </button>
+
+              <button onClick={() => {
+                  setPaused(true); setIndex((prev) => (prev + 1) % maps.length); 
+              }} className="icon-button">
+                  {<FiArrowRight size={28} />}
               </button>
           </div>
           <div className="slideshow-container" {...swipeHandlers}>
