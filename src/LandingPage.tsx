@@ -3,10 +3,13 @@ import { useNavigate } from "react-router-dom";
 import { useLanguage } from "./LanguageContext";
 import { CiSquareInfo } from "react-icons/ci";
 import "./LandingPage.css";
+import { useState } from "react";
+import InstructionPopup from './components/InstructionPopup';
 
 const LandingPage = () => {
   const { setLanguage } = useLanguage();
   const navigate = useNavigate();
+  const [showPopup, setShowPopup] = useState(true);
 
   const handleSelect = (lang: "en" | "es") => {
     setLanguage(lang);
@@ -14,11 +17,15 @@ const LandingPage = () => {
   };
 
   const handleInfo = () => {
-    navigate("/sources");
+    setShowPopup(true);
+    //navigate("/sources");
   }
 
   return (
       <div className="landing-page">
+          <div>
+            {showPopup && <InstructionPopup  />}
+          </div>
           <div className="landing-background"></div>
           <div className="landing-card">
             <div className="info-card">
