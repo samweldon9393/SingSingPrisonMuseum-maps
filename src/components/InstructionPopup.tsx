@@ -57,7 +57,7 @@ const InstructionPopup: React.FC<InstructionPopupProps> = ({ timeoutDuration = 1
             <li>Toque las regiones resaltadas en los mapas para obtener más información.</li>
           </ul>
         </div>
-        <button className="close-button" onClick={() => setShowPopup(false)}>Got It!</button>
+        <button className="instruction-close-button" onClick={() => setShowPopup(false)}>Got It!</button>
       </div>
     </div>
   );

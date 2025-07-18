@@ -36,7 +36,7 @@
   list-style: disc inside;
 }
 
-.close-button {
+.instruction-close-button {
   background-color: #c88b31;
   color: black;
   border: none;
@@ -46,7 +46,7 @@
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.close-button:hover {
+.instruction-close-button:hover {
   background-color: #fdfde7;
   transform: scale(1.05);
 }
