@@ -41,7 +41,7 @@ const InstructionPopup: React.FC<InstructionPopupProps> = ({ timeoutDuration = 6
 
   return (
     <div className="instruction-popup-overlay">
-      <div className="instruction-popup">
+      <div className="instruction-popup-content">
         <h2>How to Use This App</h2>
         <p>
           Welcome! This app is designed to help you explore data through animations and interactive features. Tap or click to interact with the elements on the screen. 
@@ -49,7 +49,7 @@ const InstructionPopup: React.FC<InstructionPopupProps> = ({ timeoutDuration = 6
         <p>
           If you ever get stuck, just touch the screen to resume or refresh the page.
         </p>
-        <button onClick={() => setShowPopup(false)}>Got It!</button>
+        <button className="close-button" onClick={() => setShowPopup(false)}>Got It!</button>
       </div>
     </div>
   );
