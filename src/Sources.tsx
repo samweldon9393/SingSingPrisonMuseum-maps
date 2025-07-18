@@ -3,6 +3,8 @@ import './Sources.css'
 import sourcesData from './sources.json';
 import { FiHome } from "react-icons/fi";
 import { useNavigate } from 'react-router-dom';
+import { useState } from "react";
+import InstructionPopup from './components/InstructionPopup';
 
 interface Source {
   id: number;
@@ -24,6 +26,7 @@ interface Source {
 const Sources: React.FC = () => {
   const sources: Source[] = sourcesData;
   const navigate = useNavigate();
+  const [showPopup, setShowPopup] = useState(true);
 
   const getSourceIcon = (type: Source['type']): string => {
     switch (type) {
@@ -88,6 +91,9 @@ const Sources: React.FC = () => {
 
   return (
     <>
+    <div>
+      {showPopup && <InstructionPopup  />}
+    </div>
     <div className="sources-background"></div>
     <div className="container">
       <div className="content">
