@@ -6,6 +6,9 @@ import { useLanguage } from "./LanguageContext";
 import captionsEn from "./captions.en.json";
 import captionsEs from "./captions.es.json";
 
+// Instructions
+import InstructionPopup from './components/InstructionPopup';
+
 // Play button
 import { FiPlay, FiPause, FiHome, FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import { useSwipeable } from 'react-swipeable';
@@ -45,6 +48,7 @@ function MainApp() {
     const [index, setIndex] = useState(0);
     const [paused, setPaused] = useState(false);
     const [activeRegion, setActiveRegion] = useState<string | null>(null);
+    const [showPopup, setShowPopup] = useState(true);
     const navigate = useNavigate();
 
     // Languages
@@ -89,9 +93,12 @@ function MainApp() {
       trackMouse: true // allows swipe with mouse drag too
   });
 
-
   return (
+
       <div className="slideshow-wrapper">
+      <div>
+        {showPopup && <InstructionPopup  />}
+      </div>
           <div className="map-background"></div>
           <div className="controls">
               <button onClick={() => {

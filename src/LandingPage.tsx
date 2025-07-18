@@ -17,8 +17,7 @@ const LandingPage = () => {
   };
 
   const handleInfo = () => {
-    setShowPopup(true);
-    //navigate("/sources");
+    navigate("/sources");
   }
 
   return (

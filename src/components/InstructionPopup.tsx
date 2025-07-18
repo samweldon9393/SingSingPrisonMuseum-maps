@@ -6,7 +6,7 @@ interface InstructionPopupProps {
   timeoutDuration?: number; // in milliseconds
 }
 
-const InstructionPopup: React.FC<InstructionPopupProps> = ({ timeoutDuration = 12000 }) => {
+const InstructionPopup: React.FC<InstructionPopupProps> = ({ timeoutDuration = 120000 }) => {
   const [showPopup, setShowPopup] = useState(false);
   const [lastActivity, setLastActivity] = useState(Date.now());
 
