@@ -6,7 +6,7 @@ interface InstructionPopupProps {
   timeoutDuration?: number; // in milliseconds
 }
 
-const InstructionPopup: React.FC<InstructionPopupProps> = ({ timeoutDuration = 60000 }) => {
+const InstructionPopup: React.FC<InstructionPopupProps> = ({ timeoutDuration = 12000 }) => {
   const [showPopup, setShowPopup] = useState(false);
   const [lastActivity, setLastActivity] = useState(Date.now());
 
@@ -43,12 +43,13 @@ const InstructionPopup: React.FC<InstructionPopupProps> = ({ timeoutDuration = 6
     <div className="instruction-popup-overlay">
       <div className="instruction-popup-content">
         <h2>How to Use This App</h2>
-        <p>
-          Welcome! This app is designed to help you explore data through animations and interactive features. Tap or click to interact with the elements on the screen. 
-        </p>
-        <p>
-          If you ever get stuck, just touch the screen to resume or refresh the page.
-        </p>
+        <ul>
+          <li>Press home button to select language.</li>
+          <li>Swipe or use arrow buttons to move through the years.</li>
+          <li>Use the play/pause button to start or stop the animation.</li>
+          <li>Tap highlighted regions on the maps to learn more.</li>
+          <li>If inactive for a while, this popup will appear again with instructions.</li>
+        </ul>
         <button className="close-button" onClick={() => setShowPopup(false)}>Got It!</button>
       </div>
     </div>

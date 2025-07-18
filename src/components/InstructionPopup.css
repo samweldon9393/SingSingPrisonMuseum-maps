@@ -38,11 +38,11 @@
 }
 
 .close-button {
-  background-color: #c88b31;
+  background-color: #c88b31 !important;
   color: black;
   padding: 0.6rem 1.2rem;
   border: none;
-  font-size: 1rem;
+  font-size: 1rem !important;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
