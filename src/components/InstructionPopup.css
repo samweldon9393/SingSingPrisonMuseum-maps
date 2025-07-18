@@ -4,47 +4,46 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.6);
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   z-index: 9999;
 }
 
 .instruction-popup-content {
-  background-color: #ffffff;
+  background: #fff;
   padding: 2rem;
-  max-width: 600px;
+  max-width: 800px;
   width: 90%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   text-align: center;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  font-family: 'Monument Grotesk', sans-serif;
+  transform: scale(.85);
 }
 
-.instruction-popup-content h2 {
-  margin-bottom: 1rem;
-  font-size: 1.75rem;
+.instruction-lists {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 1.5rem 1;
+  margin-right: 1rem;
+  flex-wrap: wrap;
 }
 
-.instruction-popup-content ul {
-  list-style-type: disc;
+.instruction-list {
+  flex: 1;
   text-align: left;
-  margin: 1rem 0;
-  padding-left: 1.5rem;
-}
-
-.instruction-popup-content ul li {
-  margin-bottom: 0.5rem;
+  list-style: disc inside;
 }
 
 .close-button {
-  background-color: #c88b31 !important;
+  background-color: #c88b31;
   color: black;
-  padding: 0.6rem 1.2rem;
   border: none;
-  font-size: 1rem !important;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .close-button:hover {
