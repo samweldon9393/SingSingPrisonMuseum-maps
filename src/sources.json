@@ -117,6 +117,15 @@
     },
     {
       "id": 13,
+      "type": "website",
+      "title": "Near Map",
+      "authors": [""],
+      "url": "https://www.nearmap.com/?utm_source=google&utm_medium=organic",
+      "accessDate": "2025-07-22",
+      "year": 2024 
+    },
+    {
+      "id": 14,
       "type": "book",
       "title": "Images of America: Sing Sing Prison",
       "authors": ["Guy Cheli"],
