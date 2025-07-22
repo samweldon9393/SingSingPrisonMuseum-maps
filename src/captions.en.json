@@ -57,8 +57,8 @@
         "* Scientific American (1929)"
     ],
     "Cell Block" : [
-        "/images/1929/CellBlock.png",
-        "* Scientific American (1929)"
+        "/images/1929/Cells.png",
+        "* Img: Cheli (2009)  Text: Scientific American (1929)"
     ],
     "Mattress Shop" : [
         "/images/Factories/MattressFactory.jpeg",
@@ -98,6 +98,10 @@
     "Warner Gym" : [
         "/images/2013/WarnerGym.png",
         "* Images of America: Sing Sing Prison (2003)" 
+    ],
+    "New Chapel" : [
+        "/images/2013/NewChapel.png",
+        "* NearMap (2024)" 
     ],
     "Visitor Processing" : [
         "/images/2013/NoVisitors.png",

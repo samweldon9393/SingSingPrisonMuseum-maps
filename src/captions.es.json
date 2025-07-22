@@ -52,12 +52,12 @@
 
     "_comment:" : ["1924", ""],
     "Death House" : [
-        "/images/1929/DeathHouse_es.jpg",
+        "/images/1929/DeathHouse_es.png",
         "* Scientific American (1929)"
     ],
     "Cell Block" : [
-        "/images/1929/CellBlock_es.jpg",
-        "* Scientific American (1929)"
+        "/images/1929/Cells_es.png",
+        "* Img: Cheli (2009)  Text: Scientific American (1929)"
     ],
     "Mattress Shop" : [
         "/images/Factories/MattressFactory.jpeg",
@@ -97,6 +97,10 @@
     "Warner Gym" : [
         "/images/2013/WarnerGym_es.png",
         "* Images of America: Sing Sing Prison (2003)" 
+    ],
+    "New Chapel" : [
+        "/images/2013/NewChapel.png",
+        "* NearMap (2024)" 
     ],
     "Visitor Processing" : [
         "/images/2013/NoVisitors_es.png",
