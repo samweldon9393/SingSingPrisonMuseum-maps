@@ -5,6 +5,7 @@
   height: 100vh;
   background: #f8fafc;
   text-align: center;
+  font-family: 'Monument Grotesk Semi Mono' !important;
 }
 
 .landing-card {
@@ -14,10 +15,6 @@
   max-width: 500px;
   width: 100%;
   z-index: 4;
-}
-
-.title-heading {
-  font-family: 'Georgia', serif;
 }
 
 .landing-background {
@@ -38,7 +35,7 @@
 }
 
 .subheading {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
   color: #6a5d4d;
 }
