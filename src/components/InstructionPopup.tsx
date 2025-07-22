@@ -50,19 +50,20 @@ const InstructionPopup: React.FC<InstructionPopupProps> = ({ timeoutDuration = 1
   return (
     <div className="instruction-popup-overlay">
       <div className="instruction-popup-content">
-        <h2>How to Use This App | Cómo Usar Esta Aplicación</h2>
         <div className="instruction-lists">
           <ul className="instruction-list">
+            <h2>How to Use This App</h2>
             <li>Press home button to select language.</li>
             <li>Swipe or use arrow buttons to see change over time.</li>
             <li>Use the play/pause button to start or stop the animation.</li>
             <li>Tap highlighted regions on the maps to learn more.</li>
           </ul>
           <ul className="instruction-list">
-            <li>Presione el botón de inicio para seleccionar el idioma.</li>
-            <li>Deslice o use las flechas para ver los cambios a lo largo del tiempo.</li>
-            <li>Use el botón de reproducir/pausar para iniciar o detener la animación.</li>
-            <li>Toque las regiones resaltadas en los mapas para obtener más información.</li>
+            <h2>Cómo Usar Esta Aplicación</h2>
+            <li>Presione el botón de inicio para elegir idioma.</li>
+            <li>Deslice o use flechas para ver cambios con el tiempo.</li>
+            <li>Use el botón de play/pausa para iniciar o parar la animación.</li>
+            <li>Toque zonas marcadas en el mapa para saber más.</li>
           </ul>
         </div>
         <button className="instruction-close-button" onClick={() => {setShowPopup(false); setShownOnce(true);}}>Got It!</button>
