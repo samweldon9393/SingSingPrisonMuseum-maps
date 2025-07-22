@@ -104,7 +104,7 @@ function MainApp() {
           <div className="map-background"></div>
           <div className="controls">
               <button onClick={() => {
-                  setPaused(true); setIndex((prev) => (prev - 1) % maps.length); 
+                  setPaused(true); setIndex((prev) => (prev - 1) < 0 ? (maps.length - 1) : (prev - 1)); 
               }} className="icon-button">
                   {<FiArrowLeft size={28} />}
               </button>
