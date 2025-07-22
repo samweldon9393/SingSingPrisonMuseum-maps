@@ -81,10 +81,14 @@ body, html {
   padding: 0 2.5rem;
   color: black;
   font-size: 5rem;
+  font-family: 'Monument Grotesk Semi Mono';
+  font-size: 1.4rem !important;
 }
 
 .banner-year {
-  font-family: Georgia;
+  font-family: 'Monument Grotesk Semi Mono';
+  font-size: 1.9rem !important;
+  margin-top: -1rem !important;
 }
 
 @media (max-width: 600px) {
