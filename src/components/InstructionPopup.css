@@ -33,7 +33,7 @@
 .instruction-list {
   flex: 1;
   text-align: left;
-  list-style: disc inside;
+  list-style: square ;
 }
 
 .instruction-close-button {

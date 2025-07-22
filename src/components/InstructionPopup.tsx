@@ -9,6 +9,7 @@ interface InstructionPopupProps {
 const InstructionPopup: React.FC<InstructionPopupProps> = ({ timeoutDuration = 120000 }) => {
   const [showPopup, setShowPopup] = useState(false);
   const [lastActivity, setLastActivity] = useState(Date.now());
+  const [shownOnce, setShownOnce] = useState(false);
 
   // Reset activity timer
   const handleUserActivity = useCallback(() => {
@@ -37,7 +38,13 @@ const InstructionPopup: React.FC<InstructionPopupProps> = ({ timeoutDuration = 1
     };
   }, [lastActivity, handleUserActivity, timeoutDuration]);
 
-  if (!showPopup) return null;
+  if (!showPopup)
+  {
+      return null;
+  }
+  if (timeoutDuration === 0 && shownOnce){
+      setShowPopup(false);
+  }
 
   return (
     <div className="instruction-popup-overlay">
@@ -57,7 +64,7 @@ const InstructionPopup: React.FC<InstructionPopupProps> = ({ timeoutDuration = 1
             <li>Toque las regiones resaltadas en los mapas para obtener más información.</li>
           </ul>
         </div>
-        <button className="instruction-close-button" onClick={() => setShowPopup(false)}>Got It!</button>
+        <button className="instruction-close-button" onClick={() => {setShowPopup(false); setShownOnce(true);}}>Got It!</button>
       </div>
     </div>
   );

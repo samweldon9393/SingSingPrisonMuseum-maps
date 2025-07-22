@@ -23,6 +23,9 @@ const LandingPage = () => {
   return (
       <div className="landing-page">
           <div>
+            {showPopup && <InstructionPopup  timeoutDuration={0}/>}
+          </div>
+          <div>
             {showPopup && <InstructionPopup  />}
           </div>
           <div className="landing-background"></div>
