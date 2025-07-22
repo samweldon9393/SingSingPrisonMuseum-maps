@@ -37,13 +37,13 @@ const LandingPage = () => {
                 </button>
               </div>
               </div>
-            <h1 className="title-heading">200 Years of Sing Sing</h1>
             <p className="subheading">
               Explore the rich history of one of America's most iconic prisons.
             </p>
             <img
-              src={`${process.env.PUBLIC_URL}/images/Museum/OldCellBlock.png`}
-              alt="Old Cell Block"
+              className="logo-img"
+              src={`${process.env.PUBLIC_URL}/images/SingSing200.jpg`}
+              alt="200 Years of Sing Sing"
             />
             <div className="lang-section">
                 <i>Select Language / Seleccione Idioma</i>

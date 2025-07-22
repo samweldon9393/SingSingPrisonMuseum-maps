@@ -15,6 +15,7 @@ import { useSwipeable } from 'react-swipeable';
 
 // Maps
 import Map1834 from "./components/Map1834";
+import { ReactComponent as Map1870 } from '../src/images/1870.svg';
 import Map1886 from "./components/Map1886";
 import { ReactComponent as Map1891 } from '../src/images/1891.svg';
 import Map1897 from "./components/Map1897";
@@ -34,6 +35,7 @@ type MapData = {
 
 const maps: MapData[] = [
     { Component: Map1834, year: "1834" },
+    { Component: Map1870, year: "1870" },
     { Component: Map1886, year: "1886" },
     { Component: Map1891, year: "1891" },
     { Component: Map1897, year: "1897" },
