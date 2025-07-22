@@ -38,6 +38,15 @@
   font-size: .9rem !important;
 }
 
+@media (max-width: 768px) {
+  .instruction-popup-content {
+      font-size: .7rem !important;
+  }
+  .instruction-list {
+    font-size: .65rem !important;
+  }
+}
+
 .instruction-close-button {
   background-color: #c88b31;
   color: black;
