@@ -15,6 +15,7 @@ const InstructionPopup: React.FC<InstructionPopupProps> = ({ timeoutDuration = 1
   const handleUserActivity = useCallback(() => {
     setLastActivity(Date.now());
     if (showPopup) setShowPopup(false); // Hide popup if showing
+    setShownOnce(true);
   }, [showPopup]);
 
   useEffect(() => {
@@ -53,13 +54,13 @@ const InstructionPopup: React.FC<InstructionPopupProps> = ({ timeoutDuration = 1
         <div className="instruction-lists">
           <ul className="instruction-list">
             <li>Press home button to select language.</li>
-            <li>Swipe or use arrow buttons to move through the years.</li>
+            <li>Swipe or use arrow buttons to see change over time.</li>
             <li>Use the play/pause button to start or stop the animation.</li>
             <li>Tap highlighted regions on the maps to learn more.</li>
           </ul>
           <ul className="instruction-list">
             <li>Presione el botón de inicio para seleccionar el idioma.</li>
-            <li>Deslice o use las flechas para avanzar por los años.</li>
+            <li>Deslice o use las flechas para ver los cambios a lo largo del tiempo.</li>
             <li>Use el botón de reproducir/pausar para iniciar o detener la animación.</li>
             <li>Toque las regiones resaltadas en los mapas para obtener más información.</li>
           </ul>
