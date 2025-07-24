@@ -52,7 +52,7 @@ const InstructionPopup: React.FC<InstructionPopupProps> = ({ timeoutDuration = 1
       <div className="instruction-popup-content">
         <div className="instruction-lists">
           <ul className="instruction-list">
-            <h2>How to Use This App</h2>
+            <h2><strong>How to Use This App</strong></h2>
             <li>Press home button to select language.</li>
             <li>Swipe or use arrow buttons to see change over time.</li>
             <li>Use the play/pause button to start or stop the animation.</li>
