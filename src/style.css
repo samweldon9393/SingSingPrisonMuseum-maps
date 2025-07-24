@@ -166,8 +166,8 @@ body, html {
 svg path[id] {
   fill: #c88b31 !important;
   fill-opacity: 0.2 !important;
-  stroke: #c88b31 ;
-  stroke-width: 7;
+  stroke: #F7BB60;
+  stroke-width: 9;
   fill: transparent;
   transition: fill 0.2s ease-in-out;
   cursor: pointer;
