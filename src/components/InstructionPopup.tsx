@@ -61,7 +61,7 @@ const InstructionPopup: React.FC<InstructionPopupProps> = ({ timeoutDuration = 1
             <h2>Cómo Usar Esta Aplicación</h2>
             <li>Presione el botón de inicio para elegir idioma.</li>
             <li>Deslice o use flechas para ver cambios con el tiempo.</li>
-            <li>Use el botón de play/pausa para iniciar o parar la animación.</li>
+            <li>Use el botón de play/pausa para iniciar o parar.</li>
             <li>Toque zonas marcadas en el mapa para saber más.</li>
           </ul>
         </div>
