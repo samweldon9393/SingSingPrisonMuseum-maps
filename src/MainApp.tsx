@@ -80,8 +80,6 @@ function MainApp() {
     };
 
 
-
-
   // Swipe functionality
   const swipeHandlers = useSwipeable({
       onSwipedLeft: () => {

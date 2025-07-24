@@ -39,11 +39,10 @@ const InstructionPopup: React.FC<InstructionPopupProps> = ({ timeoutDuration = 1
     };
   }, [lastActivity, handleUserActivity, timeoutDuration]);
 
-  if (!showPopup)
-  {
+  if (!showPopup) {
       return null;
   }
-  if (timeoutDuration === 0 && shownOnce){
+  if (timeoutDuration === 0 && shownOnce) {
       setShowPopup(false);
   }
 
