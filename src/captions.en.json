@@ -41,6 +41,8 @@
         "/images/1920Program/Chapel.jpg",
         "* Museum Collection (1920)"
     ],
+
+    "_comment:" : ["1903", ""],
     "Shoe Shop" : [
         "/images/Factories/ShoeFactory.jpeg",
         "* Ossining Historical Society (1935)" 
@@ -49,20 +51,15 @@
         "/images/1920Program/PrintShop.jpg",
         "* Museum Collection (1920)" 
     ],
-
-
-    "_comment:" : ["1924", ""],
-    "Death House" : [
-        "/images/1929/DeathHouse.png",
-        "* Scientific American (1929)"
-    ],
-    "Cell Block" : [
-        "/images/1929/Cells.png",
-        "* Img: Cheli (2009)  Text: Scientific American (1929)"
-    ],
     "Mattress Shop" : [
         "/images/Factories/MattressFactory.jpeg",
         "* Ossining Historical Society (1935)" 
+    ],
+
+    "_comment:" : ["1911", ""],
+    "Cell Block" : [
+        "/images/1929/Cells.png",
+        "* Img: Cheli (2009)  Text: Scientific American (1929)"
     ],
     "Warden's Office" : [
         "/images/1933/Handbook/PositionsAndSalaries.png",
@@ -71,6 +68,12 @@
     "Hospital" : [
         "/images/1920Program/Hospital.jpg",
         "* Museum Collection (1920)"
+    ],
+
+    "_comment:" : ["1924", ""],
+    "Death House" : [
+        "/images/1929/DeathHouse.png",
+        "* Scientific American (1929)"
     ],
     "Athletic Field" : [
         "/images/1929/Baseball.png",
