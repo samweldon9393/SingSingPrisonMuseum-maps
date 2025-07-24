@@ -20,7 +20,7 @@ import Map1886 from "./components/Map1886";
 import { ReactComponent as Map1891 } from '../src/images/1891.svg';
 import Map1897 from "./components/Map1897";
 import Map1903 from "./components/Map1903";
-import { ReactComponent as Map1911 } from '../src/images/1911.svg';
+import Map1911 from "./components/Map1911";
 import Map1924 from "./components/Map1924";
 import { ReactComponent as Map1931 } from '../src/images/1931.svg';
 import Map2013 from "./components/Map2013";
@@ -136,6 +136,7 @@ function MainApp() {
                           || map.year === "1886"  
                           || map.year === "1897" 
                           || map.year === "1903" 
+                          || map.year === "1911" 
                           || map.year === "1924" 
                           || map.year === "2013" ? (
                           <MapComponent onRegionClick={handleRegionClick} />
