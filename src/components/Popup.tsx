@@ -15,6 +15,7 @@ type Props = {
 const Popup: React.FC<Props> = ({ regionId, onClose, captionMap }) => {
   const caption = captionMap[regionId];
   const imageUrl = caption ? `${process.env.PUBLIC_URL}${caption[0]}` : null;
+  const wideImg = "/SingSingPrisonMuseum-maps/images/1897/SingSingMarble.png";
 
   return (
     <DraggableWrapper defaultPosition={{ x: 100, y: 100 }}>
@@ -23,7 +24,12 @@ const Popup: React.FC<Props> = ({ regionId, onClose, captionMap }) => {
             <button className="close-button" onClick={onClose}>×</button>
             <h3>{regionId}</h3>
           </div>
-          {imageUrl ? (
+          {imageUrl == wideImg ? (
+            <>
+              <img src={imageUrl} alt={regionId} className="popup-image-wide" />
+              <i>{caption[1]}</i>
+            </>
+          ) : imageUrl ? (
             <>
               <img src={imageUrl} alt={regionId} className="popup-image" />
               <i>{caption[1]}</i>

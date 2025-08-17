@@ -6,8 +6,8 @@
   left: 5%;
   background: rgba(255, 255, 255, 0.95);
   padding: 10px;
-  max-width: 300px;
-  width: 300px;
+  max-width: 500px;
+  min-width: 300px;
   z-index: 1000;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
@@ -21,11 +21,15 @@
   max-width: 100%;
   height: auto;
   border-radius: 6px;
-}
-
-.popup-image {
   transform: rotate(0deg);
   image-orientation: from-image; /* default — can be buggy */
+}
+
+.popup-image-wide {
+  max-width: 100%;
+  min-width: 500px;
+  height: auto;
+  border-radius: 6px;
 }
 
 .close-button {
