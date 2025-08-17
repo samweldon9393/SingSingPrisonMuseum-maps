@@ -126,6 +126,15 @@
     },
     {
       "id": 14,
+      "type": "website",
+      "title": "New York State Archive",
+      "authors": [""],
+      "url": "https://www.archives.nysed.gov/",
+      "accessDate": "2025-08-12",
+      "year": 2024 
+    },
+    {
+      "id": 15,
       "type": "book",
       "title": "Images of America: Sing Sing Prison",
       "authors": ["Guy Cheli"],
