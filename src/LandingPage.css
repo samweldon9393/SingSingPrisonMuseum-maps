@@ -21,7 +21,7 @@
   position: absolute;
   width: 95vw;
   height: 65vh;
-  background: #c88b31;
+  background: #a76702;
   top: 10%;
   left: -5%;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
@@ -89,7 +89,7 @@
 }
 
 .lang-buttons button {
-  background-color: #c88b31;
+  background-color: #a76702;
   color: black;
   border: none;
   padding: 0.75rem 1.5rem;

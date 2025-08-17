@@ -23,7 +23,7 @@ body, html {
   position: absolute;
   width: 150vw;
   height: 50vh;
-  background: #c88b31;
+  background: #a76702;
   top: 10%;
   left: 15%;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
@@ -164,9 +164,9 @@ body, html {
 
 /* Style all paths with an id */
 svg path[id] {
-  fill: #c88b31 !important;
+  fill: #a76702 !important;
   fill-opacity: 0.2 !important;
-  stroke: #F7BB60;
+  stroke: #a76702;
   stroke-width: 9;
   fill: transparent;
   transition: fill 0.2s ease-in-out;
@@ -175,6 +175,6 @@ svg path[id] {
 
 /* On hover, apply glow effect */
 svg path[id]:hover {
-  fill: #c88b31 !important;
+  fill: #a76702 !important;
   fill-opacity: 0.5 !important;
 }
