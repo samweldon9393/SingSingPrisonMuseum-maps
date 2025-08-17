@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/SingSingPrisonMuseum-maps/static/css/main.8d3d8576.css",
-    "main.js": "/SingSingPrisonMuseum-maps/static/js/main.e44986e6.js",
+    "main.css": "/SingSingPrisonMuseum-maps/static/css/main.15d98d30.css",
+    "main.js": "/SingSingPrisonMuseum-maps/static/js/main.aed82e23.js",
     "static/media/1870.svg": "/SingSingPrisonMuseum-maps/static/media/1870.80d91a9ffb9e75cdcdf8b5c8b82a21b4.svg",
     "static/media/1931.svg": "/SingSingPrisonMuseum-maps/static/media/1931.fecaf218ca6660209a7b87311d32a9eb.svg",
     "static/media/2013.svg": "/SingSingPrisonMuseum-maps/static/media/2013.3ca69dde125b9679756d6abb1bb9b838.svg",
     "static/media/1834.svg": "/SingSingPrisonMuseum-maps/static/media/1834.519f2f9e8cafc75207b8073c7d986e9a.svg",
-    "static/media/1897.svg": "/SingSingPrisonMuseum-maps/static/media/1897.affc1370b0b50eb74f8d801635fbadcd.svg",
+    "static/media/1897.svg": "/SingSingPrisonMuseum-maps/static/media/1897.faacf675523cd29973fdd0aad6bcba66.svg",
     "static/media/1911.svg": "/SingSingPrisonMuseum-maps/static/media/1911.0a6de81129e2433ac3d0117fd7e808c8.svg",
     "static/media/1924.svg": "/SingSingPrisonMuseum-maps/static/media/1924.aa32077125a7be59d1f6dcaf28113f67.svg",
     "static/media/1891.svg": "/SingSingPrisonMuseum-maps/static/media/1891.7c0e0ae9769075c32a61970e12677d0c.svg",
@@ -15,11 +15,11 @@
     "static/media/monument-grotesk-regular.ttf": "/SingSingPrisonMuseum-maps/static/media/monument-grotesk-regular.02c608d4045c684e70bb.ttf",
     "static/media/monument-grotesk-semi-mono.ttf": "/SingSingPrisonMuseum-maps/static/media/monument-grotesk-semi-mono.71a2018840ff481202a3.ttf",
     "index.html": "/SingSingPrisonMuseum-maps/index.html",
-    "main.8d3d8576.css.map": "/SingSingPrisonMuseum-maps/static/css/main.8d3d8576.css.map",
-    "main.e44986e6.js.map": "/SingSingPrisonMuseum-maps/static/js/main.e44986e6.js.map"
+    "main.15d98d30.css.map": "/SingSingPrisonMuseum-maps/static/css/main.15d98d30.css.map",
+    "main.aed82e23.js.map": "/SingSingPrisonMuseum-maps/static/js/main.aed82e23.js.map"
   },
   "entrypoints": [
-    "static/css/main.8d3d8576.css",
-    "static/js/main.e44986e6.js"
+    "static/css/main.15d98d30.css",
+    "static/js/main.aed82e23.js"
   ]
 }
