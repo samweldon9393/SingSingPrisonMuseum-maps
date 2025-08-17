@@ -17,7 +17,7 @@ import { useSwipeable } from 'react-swipeable';
 import Map1834 from "./components/Map1834";
 import { ReactComponent as Map1870 } from '../src/images/1870.svg';
 import Map1886 from "./components/Map1886";
-import { ReactComponent as Map1891 } from '../src/images/1891.svg';
+import Map1891 from "./components/Map1891";
 import Map1897 from "./components/Map1897";
 import Map1903 from "./components/Map1903";
 import Map1911 from "./components/Map1911";
@@ -134,6 +134,7 @@ function MainApp() {
                       >
                       {   map.year === "1834" 
                           || map.year === "1886"  
+                          || map.year === "1891" 
                           || map.year === "1897" 
                           || map.year === "1903" 
                           || map.year === "1911" 

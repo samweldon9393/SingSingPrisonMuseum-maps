@@ -28,6 +28,12 @@
         "* Museum Collection"
     ],
 
+    "_comment:" : ["1891", ""],
+    "Mess Hall" : [
+        "/images/1891/MessHall.png",
+        "* The Rise of the Penitentiary in New York (1966)"
+    ],
+
     "_comment:" : ["1897", ""],
     "Granite Cutting" : [
         "/images/1894/GranitePic.png",
