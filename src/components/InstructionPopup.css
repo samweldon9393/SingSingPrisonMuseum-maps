@@ -33,6 +33,7 @@
 }
 
 .instruction-list {
+  text-align: left;
   flex: 1;
   list-style: square;
   font-size: .9rem !important;
