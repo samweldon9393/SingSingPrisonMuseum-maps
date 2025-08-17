@@ -135,6 +135,18 @@
     },
     {
       "id": 15,
+      "type": "journal",
+      "title": "The Rise of the Penitentiary in New York-A Review",
+      "authors": ["Harry Elmer Barnes"],
+      "publication": "New York History",
+      "volume": "47",
+      "issue": "1",
+      "pages": "74-82",
+      "year": 1966,
+      "url": "https://www.jstor.org/stable/23162448"
+    },
+    {
+      "id": 16,
       "type": "book",
       "title": "Images of America: Sing Sing Prison",
       "authors": ["Guy Cheli"],
