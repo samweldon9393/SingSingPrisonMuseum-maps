@@ -25,21 +25,21 @@
     ],
     "Old Cells" : [
         "/images/Museum/OldCellBlock.png",
-        "* Sing Sing Prison Museum"
+        "* Museum Collection"
     ],
 
     "_comment:" : ["1897", ""],
     "Granite Cutting" : [
-        "/images/1894/Granite.png",
-        "* New York Times (1894)"
-    ],
-    "Granite Polishing" : [
         "/images/1894/GranitePic.png",
         "* SingSingPrisonMuseum.org"
     ],
-    "Chapel Interior" : [
-        "/images/1920Program/Chapel.jpg",
-        "* Museum Collection (1920)"
+    "Granite Polishing" : [
+        "/images/1894/Granite.png",
+        "* New York Times (1894)"
+    ],
+    "Sing Sing Marble" : [
+        "/images/1897/SingSingMarble.png",
+        "* SingSingPrisonMuseum.org"
     ],
 
     "_comment:" : ["1903", ""],
