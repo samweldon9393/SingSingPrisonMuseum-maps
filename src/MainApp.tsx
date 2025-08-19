@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
+import { useSwipeable } from 'react-swipeable';
 
 // Languages
 import { useLanguage } from "./LanguageContext";
@@ -11,8 +12,7 @@ import InstructionPopup from './components/InstructionPopup';
 
 // Play button
 import { FiPlay, FiPause, FiHome, FiArrowLeft, FiArrowRight } from "react-icons/fi";
-import { BsQuestionSquare } from "react-icons/bs";
-import { useSwipeable } from 'react-swipeable';
+import { BsQuestionCircleFill } from "react-icons/bs";
 
 // Maps
 import Map1834 from "./components/Map1834";
@@ -122,7 +122,7 @@ const MainApp: React.FC<MainAppProps> = ({ setShowInstructions }) => {
               <button onClick={() => {
                   handleInfo(); 
               }} className="icon-button">
-                  <BsQuestionSquare size={28} />
+                  <BsQuestionCircleFill size={28} />
               </button>
 
               <button onClick={() => {
