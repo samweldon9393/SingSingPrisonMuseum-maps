@@ -8,16 +8,16 @@ import InstructionPopup from "./components/InstructionPopup";
 
 function App() {
   const [language, setLanguage] = useState<'en' | 'es'>('en');
-  const [showPopup, setShowPopup] = useState(false);
+  const [showInstructions, setShowInstructions] = useState(false);
 
   return (
     <>
     <Routes>
-      <Route path="/" element={<LandingPage setShowPopup={setShowPopup} />} />
+      <Route path="/" element={<LandingPage setShowInstructions={setShowInstructions} />} />
       <Route path="/map" element={<MainApp />} />
       <Route path="/sources" element={<Sources />} />
     </Routes>
-    <InstructionPopup showPopup={showPopup} setShowPopup={setShowPopup}/>
+    <InstructionPopup showInstructions={showInstructions} setShowInstructions={setShowInstructions}/>
     </>
   );
 }

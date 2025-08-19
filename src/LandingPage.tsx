@@ -7,10 +7,10 @@ import { useState } from "react";
 import InstructionPopup from './components/InstructionPopup';
 
 interface LandingPageProps {
-  setShowPopup?: any;
+  setShowInstructions?: any;
 }
 
-const LandingPage: React.FC<LandingPageProps> = ({ setShowPopup }) => {
+const LandingPage: React.FC<LandingPageProps> = ({ setShowInstructions }) => {
   const { setLanguage } = useLanguage();
   const navigate = useNavigate();
 
@@ -21,7 +21,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ setShowPopup }) => {
 
   const handleInfo = () => {
     //navigate("/sources");
-    setShowPopup(true);
+    setShowInstructions(true);
   };
 
   /*

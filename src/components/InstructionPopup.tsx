@@ -3,13 +3,13 @@ import React, { useState, useEffect, useCallback } from 'react';
 import './InstructionPopup.css';
 
 interface InstructionPopupProps {
-  showPopup?: boolean;
-  setShowPopup?: any;
+  showInstructions?: boolean;
+  setShowInstructions?: any;
 }
 
-const InstructionPopup: React.FC<InstructionPopupProps> = ({ showPopup = false, setShowPopup}) => {
+const InstructionPopup: React.FC<InstructionPopupProps> = ({ showInstructions = false, setShowInstructions}) => {
 
-  if (!showPopup) {
+  if (!showInstructions) {
       return null;
   }
 
@@ -32,7 +32,7 @@ const InstructionPopup: React.FC<InstructionPopupProps> = ({ showPopup = false, 
             <li>Toque zonas marcadas en el mapa para saber más.</li>
           </ul>
         </div>
-        <button className="instruction-close-button" onClick={() => {setShowPopup(false);}}>Got It!</button>
+        <button className="instruction-close-button" onClick={() => {setShowInstructions(false);}}>Got It!</button>
       </div>
     </div>
   );
