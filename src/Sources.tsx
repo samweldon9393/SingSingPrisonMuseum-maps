@@ -107,7 +107,7 @@ const Sources: React.FC = () => {
         <div className="home-button">
           <button onClick={() => {
               navigate('/'); 
-          }} className="icon-button">
+          }} className="home-icon-button">
               <FiHome size={28} />
           </button>
         </div>
