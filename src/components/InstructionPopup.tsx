@@ -3,47 +3,14 @@ import React, { useState, useEffect, useCallback } from 'react';
 import './InstructionPopup.css';
 
 interface InstructionPopupProps {
-  timeoutDuration?: number; // in milliseconds
+  showPopup?: boolean;
+  setShowPopup?: any;
 }
 
-const InstructionPopup: React.FC<InstructionPopupProps> = ({ timeoutDuration = 120000 }) => {
-  const [showPopup, setShowPopup] = useState(false);
-  const [lastActivity, setLastActivity] = useState(Date.now());
-  const [shownOnce, setShownOnce] = useState(false);
-
-  // Reset activity timer
-  const handleUserActivity = useCallback(() => {
-    setLastActivity(Date.now());
-    if (showPopup) setShowPopup(false); // Hide popup if showing
-    setShownOnce(true);
-  }, [showPopup]);
-
-  useEffect(() => {
-    const activityEvents = ['click', 'touchstart'];
-
-    activityEvents.forEach((event) =>
-      document.addEventListener(event, handleUserActivity)
-    );
-
-    const interval = setInterval(() => {
-      if (Date.now() - lastActivity > timeoutDuration) {
-        setShowPopup(true);
-      }
-    }, 1000);
-
-    return () => {
-      activityEvents.forEach((event) =>
-        document.removeEventListener(event, handleUserActivity)
-      );
-      clearInterval(interval);
-    };
-  }, [lastActivity, handleUserActivity, timeoutDuration]);
+const InstructionPopup: React.FC<InstructionPopupProps> = ({ showPopup = false, setShowPopup}) => {
 
   if (!showPopup) {
       return null;
-  }
-  if (timeoutDuration === 0 && shownOnce) {
-      setShowPopup(false);
   }
 
   return (
@@ -65,7 +32,7 @@ const InstructionPopup: React.FC<InstructionPopupProps> = ({ timeoutDuration = 1
             <li>Toque zonas marcadas en el mapa para saber más.</li>
           </ul>
         </div>
-        <button className="instruction-close-button" onClick={() => {setShowPopup(false); setShownOnce(true);}}>Got It!</button>
+        <button className="instruction-close-button" onClick={() => {setShowPopup(false);}}>Got It!</button>
       </div>
     </div>
   );

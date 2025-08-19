@@ -6,10 +6,13 @@ import "./LandingPage.css";
 import { useState } from "react";
 import InstructionPopup from './components/InstructionPopup';
 
-const LandingPage = () => {
+interface LandingPageProps {
+  setShowPopup?: any;
+}
+
+const LandingPage: React.FC<LandingPageProps> = ({ setShowPopup }) => {
   const { setLanguage } = useLanguage();
   const navigate = useNavigate();
-  const [showPopup, setShowPopup] = useState(true);
 
   const handleSelect = (lang: "en" | "es") => {
     setLanguage(lang);
@@ -17,26 +20,29 @@ const LandingPage = () => {
   };
 
   const handleInfo = () => {
-    navigate("/sources");
-  }
+    //navigate("/sources");
+    setShowPopup(true);
+  };
 
-  return (
-      <div className="landing-page">
+  /*
           <div>
             {showPopup && <InstructionPopup  timeoutDuration={0}/>}
           </div>
+   */
+  return (
+      <div className="landing-page">
           <div>
-            {showPopup && <InstructionPopup  />}
+            {<InstructionPopup  />}
           </div>
           <div className="landing-background"></div>
           <div className="landing-card">
             <div className="info-card">
               <div className="info-button">
                 <button onClick={() => handleInfo()}>
-                      {<CiSquareInfo size={28}/>}
+                  {<CiSquareInfo size={28}/>}
                 </button>
               </div>
-              </div>
+            </div>
             <p className="subheading">
               Explore the evolution of Sing Sing and the architechture of confinement
             </p>
