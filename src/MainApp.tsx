@@ -166,13 +166,15 @@ const MainApp: React.FC<MainAppProps> = ({ setShowInstructions }) => {
                   <div className="banner-swipe">
                     {language === "en" ? (
                         <>
-                            <div><i>Swipe to Change Year  Pinch to Zoom.</i></div>
-                            <div><i>Tap Orange Sections For Information.</i></div>
+                            <div className="banner-ins"><i>Swipe to Change Year.&nbsp;&nbsp;</i></div>
+                            <div className="banner-ins"><i>Pinch to Zoom.&nbsp;&nbsp;</i></div>
+                            <div className="banner-ins"><i>Tap Orange Sections For Information.</i></div>
                         </>
                     ) : (
                         <>
-                            <div><i>Desliza para el año anterior o siguiente / Pellizcar para hacer zoom</i></div>
-                            <div><i>Toca las secciones naranjas para más información</i></div>
+                            <div className="banner-ins"><i>Desliza para el año anterior o siguiente.&nbsp;&nbsp;</i></div>
+                            <div className="banner-ins"><i>Pellizcar para hacer zoom.&nbsp;&nbsp;</i></div>
+                            <div className="banner-ins"><i>Toca las secciones naranjas para información.</i></div>
                         </>
                     )}
                   </div>

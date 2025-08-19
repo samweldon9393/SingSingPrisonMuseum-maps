@@ -129,6 +129,10 @@ body, html {
   margin-bottom: .8rem;
 }
 
+.banner-ins {
+  padding: -2rem;
+}
+
 .controls {
   position: absolute;
   bottom: 20px;
