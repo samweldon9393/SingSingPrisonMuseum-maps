@@ -11,6 +11,7 @@ import InstructionPopup from './components/InstructionPopup';
 
 // Play button
 import { FiPlay, FiPause, FiHome, FiArrowLeft, FiArrowRight } from "react-icons/fi";
+import { CiSquareInfo } from "react-icons/ci";
 import { useSwipeable } from 'react-swipeable';
 
 // Maps
@@ -46,11 +47,14 @@ const maps: MapData[] = [
     { Component: Map2013, year: "2013" },
 ];
 
-function MainApp() {
+interface MainAppProps {
+  setShowInstructions?: any;
+}
+
+const MainApp: React.FC<MainAppProps> = ({ setShowInstructions }) => {
     const [index, setIndex] = useState(0);
     const [paused, setPaused] = useState(false);
     const [activeRegion, setActiveRegion] = useState<string | null>(null);
-    const [showPopup, setShowPopup] = useState(true);
     const navigate = useNavigate();
 
     // Languages
@@ -79,6 +83,10 @@ function MainApp() {
         }
     };
 
+  const handleInfo = () => {
+    setShowInstructions(true);
+  };
+
 
   // Swipe functionality
   const swipeHandlers = useSwipeable({
@@ -97,7 +105,7 @@ function MainApp() {
 
       <div className="slideshow-wrapper">
       <div>
-        {showPopup && <InstructionPopup  />}
+        {<InstructionPopup  />}
       </div>
           <div className="map-background"></div>
           <div className="controls">
@@ -152,7 +160,7 @@ function MainApp() {
                   <div className="banner-swipe">
                     {language === "en" ? (
                         <>
-                            <div><i>Swipe to Change Year / Pinch to Zoom.</i></div>
+                            <div><i>Swipe to Change Year  Pinch to Zoom.</i></div>
                             <div><i>Tap Orange Sections For Information.</i></div>
                         </>
                     ) : (
@@ -161,6 +169,11 @@ function MainApp() {
                             <div><i>Toca las secciones naranjas para más información</i></div>
                         </>
                     )}
+                      <div className="info-button">
+                        <button onClick={() => handleInfo()}>
+                          {<CiSquareInfo size={28}/>}
+                        </button>
+                      </div>
                   </div>
               </div>
           </div>

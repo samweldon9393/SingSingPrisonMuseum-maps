@@ -14,7 +14,7 @@ function App() {
     <>
     <Routes>
       <Route path="/" element={<LandingPage setShowInstructions={setShowInstructions} />} />
-      <Route path="/map" element={<MainApp />} />
+      <Route path="/map" element={<MainApp setShowInstructions={setShowInstructions}/>} />
       <Route path="/sources" element={<Sources />} />
     </Routes>
     <InstructionPopup showInstructions={showInstructions} setShowInstructions={setShowInstructions}/>

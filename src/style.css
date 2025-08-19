@@ -102,6 +102,7 @@ body, html {
   }
 
   .banner-swipe {
+    
     font-size: 0.9rem;
   }
 
@@ -122,9 +123,12 @@ body, html {
 .banner-swipe {
   text-align: right;
   font-style: italic;
-  font-size: 1rem;
+  font-size: .8rem;
   line-height: 1.4;
   z-index: 4;
+  display: flex;
+  margin: .5rem;
+  margin-bottom: .8rem;
 }
 
 .controls {
@@ -152,6 +156,24 @@ body, html {
 
 .icon-button svg {
   color: #000;
+}
+
+.info-button {
+  margin-top: -1rem;
+  margin-right: -2rem;
+}
+
+.info-button button {
+  background: transparent;
+  border: 0rem; 
+  margin: 0rem;
+  padding: 0rem;
+}
+
+.info-button button:hover {
+  transform: scale(1.2);
+  transition: ease-in-out .2s;
+  cursor: pointer;
 }
 
 /* Region Effects */

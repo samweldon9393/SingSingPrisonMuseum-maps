@@ -20,10 +20,10 @@ const LandingPage: React.FC<LandingPageProps> = ({ setShowInstructions }) => {
   };
 
   const handleInfo = () => {
-    //navigate("/sources");
     setShowInstructions(true);
   };
 
+    //navigate("/sources");
   /*
           <div>
             {showPopup && <InstructionPopup  timeoutDuration={0}/>}
