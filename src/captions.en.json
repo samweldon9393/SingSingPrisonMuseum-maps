@@ -31,7 +31,8 @@
     "_comment:" : ["1891", ""],
     "Mess Hall" : [
         "/images/1891/MessHall.png",
-        "* The Rise of the Penitentiary in New York (1966)"
+        "* The Rise of the Penitentiary in New York (1966)",
+        "wide"
     ],
     "Yard" : [
         "/images/1891/MenLinedUp.png",
@@ -49,7 +50,8 @@
     ],
     "Sing Sing Marble" : [
         "/images/1897/SingSingMarble.png",
-        "* SingSingPrisonMuseum.org"
+        "* SingSingPrisonMuseum.org",
+        "wide"
     ],
 
     "_comment:" : ["1903", ""],
