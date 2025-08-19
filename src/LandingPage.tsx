@@ -38,7 +38,7 @@ const LandingPage = () => {
               </div>
               </div>
             <p className="subheading">
-              Explore the rich history of one of America's most iconic prisons.
+              Explore the evolution of Sing Sing and the architechture of confinement
             </p>
             <img
               className="logo-img"
@@ -46,7 +46,7 @@ const LandingPage = () => {
               alt="200 Years of Sing Sing"
             />
             <div className="lang-section">
-                <i>Select Language / Seleccione Idioma</i>
+                <i>Select Language | Seleccione Idioma</i>
                 <div className="lang-buttons">
                   <button onClick={() => handleSelect("en")}>English</button>
                   <button onClick={() => handleSelect("es")}>Español</button>
