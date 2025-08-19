@@ -1,7 +1,7 @@
 // src/LandingPage.tsx
 import { useNavigate } from "react-router-dom";
 import { useLanguage } from "./LanguageContext";
-import { CiSquareInfo } from "react-icons/ci";
+import { CiSquareInfo, CiSquareQuestion } from "react-icons/ci";
 import "./LandingPage.css";
 import { useState } from "react";
 import InstructionPopup from './components/InstructionPopup';
@@ -23,7 +23,9 @@ const LandingPage: React.FC<LandingPageProps> = ({ setShowInstructions }) => {
     setShowInstructions(true);
   };
 
-    //navigate("/sources");
+  const handleSources = () => {
+    navigate("/sources");
+  }
   /*
           <div>
             {showPopup && <InstructionPopup  timeoutDuration={0}/>}
@@ -38,8 +40,13 @@ const LandingPage: React.FC<LandingPageProps> = ({ setShowInstructions }) => {
           <div className="landing-card">
             <div className="info-card">
               <div className="info-button">
-                <button onClick={() => handleInfo()}>
+                <button onClick={() => handleSources()}>
                   {<CiSquareInfo size={28}/>}
+                </button>
+                <button onClick={() => {
+                    handleInfo(); 
+                }} className="icon-button">
+                    <CiSquareQuestion size={28} />
                 </button>
               </div>
             </div>
