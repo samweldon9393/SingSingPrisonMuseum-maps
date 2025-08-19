@@ -30,14 +30,6 @@ body, html {
   z-index: 1;
 }
 
-@media (max-width: 768px) {
-  .map-background {
-      left: 5%;
-      height: 30vh;
-      top: 25%;
-  }
-}
-
 .slideshow-container {
   position: relative;
   width: 100%;
@@ -79,6 +71,7 @@ body, html {
   justify-content: space-between;
   align-items: center;
   padding: 0 2.5rem;
+  margin-top: 1rem;
   color: black;
   font-size: 5rem;
   font-family: 'Monument Grotesk Semi Mono';
@@ -91,18 +84,24 @@ body, html {
   margin-top: -1rem !important;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  .map-background {
+      left: 5%;
+      height: 30vh;
+      top: 25%;
+  }
   .caption-banner {
     padding: 0.5rem 1rem;
     font-size: 1.2rem;
+    margin-top: 0rem !important;
   }
   
   .caption-banner h2 {
     font-size: 1.5rem;
+    margin-bottom: 2rem !important;
   }
 
   .banner-swipe {
-    
     font-size: 0.9rem;
   }
 
@@ -121,8 +120,7 @@ body, html {
 }
 
 .banner-swipe {
-  text-align: right;
-  font-style: italic;
+  text-align: center;
   font-size: .8rem;
   line-height: 1.4;
   z-index: 4;
@@ -156,24 +154,6 @@ body, html {
 
 .icon-button svg {
   color: #000;
-}
-
-.info-button {
-  margin-top: -1rem;
-  margin-right: -2rem;
-}
-
-.info-button button {
-  background: transparent;
-  border: 0rem; 
-  margin: 0rem;
-  padding: 0rem;
-}
-
-.info-button button:hover {
-  transform: scale(1.2);
-  transition: ease-in-out .2s;
-  cursor: pointer;
 }
 
 /* Region Effects */

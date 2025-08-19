@@ -11,7 +11,7 @@ import InstructionPopup from './components/InstructionPopup';
 
 // Play button
 import { FiPlay, FiPause, FiHome, FiArrowLeft, FiArrowRight } from "react-icons/fi";
-import { CiSquareInfo } from "react-icons/ci";
+import { BsQuestionSquare } from "react-icons/bs";
 import { useSwipeable } from 'react-swipeable';
 
 // Maps
@@ -120,6 +120,12 @@ const MainApp: React.FC<MainAppProps> = ({ setShowInstructions }) => {
               </button>
 
               <button onClick={() => {
+                  handleInfo(); 
+              }} className="icon-button">
+                  <BsQuestionSquare size={28} />
+              </button>
+
+              <button onClick={() => {
                   setActiveRegion(null); setPaused(true); setIndex(0); navigate('/'); 
               }} className="icon-button">
                   <FiHome size={28} />
@@ -169,11 +175,6 @@ const MainApp: React.FC<MainAppProps> = ({ setShowInstructions }) => {
                             <div><i>Toca las secciones naranjas para más información</i></div>
                         </>
                     )}
-                      <div className="info-button">
-                        <button onClick={() => handleInfo()}>
-                          {<CiSquareInfo size={28}/>}
-                        </button>
-                      </div>
                   </div>
               </div>
           </div>
