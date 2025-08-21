@@ -16,7 +16,7 @@ import { BsQuestionCircleFill } from "react-icons/bs";
 
 // Maps
 import Map1834 from "./components/Map1834";
-import { ReactComponent as Map1870 } from '../src/images/1870.svg';
+import Map1870 from "./components/Map1870";
 import Map1886 from "./components/Map1886";
 import Map1891 from "./components/Map1891";
 import Map1897 from "./components/Map1897";
@@ -147,6 +147,7 @@ const MainApp: React.FC<MainAppProps> = ({ setShowInstructions }) => {
                           className={`slideshow-image ${isActive ? "visible" : ""}`}
                       >
                       {   map.year === "1834" 
+                          || map.year === "1870"  
                           || map.year === "1886"  
                           || map.year === "1891" 
                           || map.year === "1897" 
