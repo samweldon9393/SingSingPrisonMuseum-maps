@@ -23,7 +23,7 @@ import Map1897 from "./components/Map1897";
 import Map1903 from "./components/Map1903";
 import Map1911 from "./components/Map1911";
 import Map1924 from "./components/Map1924";
-import { ReactComponent as Map1931 } from '../src/images/1931.svg';
+import Map1931 from "./components/Map1931";
 import Map2013 from "./components/Map2013";
 import Popup from './components/Popup';
 import "./style.css";
@@ -146,19 +146,7 @@ const MainApp: React.FC<MainAppProps> = ({ setShowInstructions }) => {
                           key={i}
                           className={`slideshow-image ${isActive ? "visible" : ""}`}
                       >
-                      {   map.year === "1834" 
-                          || map.year === "1870"  
-                          || map.year === "1886"  
-                          || map.year === "1891" 
-                          || map.year === "1897" 
-                          || map.year === "1903" 
-                          || map.year === "1911" 
-                          || map.year === "1924" 
-                          || map.year === "2013" ? (
-                          <MapComponent onRegionClick={handleRegionClick} />
-                      ) : (
-                      <MapComponent />
-                      )}
+                      <MapComponent onRegionClick={handleRegionClick} />
                       </div>
                   );
               })}

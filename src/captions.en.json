@@ -1,6 +1,6 @@
 {
     "_comment:" : ["1834", ""],
-    "Hudson River" : [
+    "Hudson" : [
         "/images/1834/Hudson.png",
         "* SingSingPrisonMuseum.org"
     ],
@@ -105,6 +105,19 @@
         "* New York State Archive" 
     ],
 
+    "_comment:" : ["1931", ""],
+    "Hudson River" : [
+        "/images/1931/Dock.png",
+        "* New York State Archive"
+    ],
+    "Railroad" : [
+        "/images/1931/Railroad.jpg",
+        "* getarchive.net"
+    ],
+    "Graveyard" : [
+        "/images/1931/Graveyard.png",
+        "* New York State Archive" 
+    ],
 
     "_comment:" : ["2013", ""],
     "Library and School" : [

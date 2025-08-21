@@ -18,18 +18,16 @@
      id="title1">Old Cells</title>
 </path>
 <path
-   style="fill:#000000;fill-opacity:0"
    d="m 436.79754,962.06824 0.6187,-342.75614 414.52458,2.47477 0.61869,345.23092 77.95537,-1.23739 1.85608,-462.78266 -574.76617,-3.71216 -0.6187,463.40136 z"
    id="Stone Cutters Shop">
   <title
      id="title2">Stone Cutters Shop</title>
 </path>
 <path
-   style="fill:#000000;fill-opacity:0"
    d="M 42.689845,117.55175 1613.5524,123.73868 1612.315,0.6186934 H -0.6186934 L 1.2373868,118.78913 Z"
-   id="Hudson River">
+   id="Hudson">
   <title
-     id="title3">Hudson River</title>
+     id="title3">Hudson</title>
 </path>
 </g>
 </svg>
