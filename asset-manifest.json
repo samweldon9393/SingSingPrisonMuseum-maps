@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/SingSingPrisonMuseum-maps/static/css/main.b7ad80a5.css",
-    "main.js": "/SingSingPrisonMuseum-maps/static/js/main.954a756e.js",
-    "static/media/1870.svg": "/SingSingPrisonMuseum-maps/static/media/1870.80d91a9ffb9e75cdcdf8b5c8b82a21b4.svg",
-    "static/media/1931.svg": "/SingSingPrisonMuseum-maps/static/media/1931.fecaf218ca6660209a7b87311d32a9eb.svg",
+    "main.js": "/SingSingPrisonMuseum-maps/static/js/main.6156217d.js",
+    "static/media/1870.svg": "/SingSingPrisonMuseum-maps/static/media/1870.f6c8c920c854564446377701f450930c.svg",
+    "static/media/1931.svg": "/SingSingPrisonMuseum-maps/static/media/1931.e2d03c7a1f1d799d0e4046dba747e1b3.svg",
     "static/media/2013.svg": "/SingSingPrisonMuseum-maps/static/media/2013.3ca69dde125b9679756d6abb1bb9b838.svg",
-    "static/media/1834.svg": "/SingSingPrisonMuseum-maps/static/media/1834.519f2f9e8cafc75207b8073c7d986e9a.svg",
+    "static/media/1834.svg": "/SingSingPrisonMuseum-maps/static/media/1834.487dd8d2699a1cfb3f806504237ece24.svg",
     "static/media/1897.svg": "/SingSingPrisonMuseum-maps/static/media/1897.faacf675523cd29973fdd0aad6bcba66.svg",
     "static/media/1911.svg": "/SingSingPrisonMuseum-maps/static/media/1911.0a6de81129e2433ac3d0117fd7e808c8.svg",
     "static/media/1924.svg": "/SingSingPrisonMuseum-maps/static/media/1924.aa32077125a7be59d1f6dcaf28113f67.svg",
@@ -16,10 +16,10 @@
     "static/media/monument-grotesk-semi-mono.ttf": "/SingSingPrisonMuseum-maps/static/media/monument-grotesk-semi-mono.71a2018840ff481202a3.ttf",
     "index.html": "/SingSingPrisonMuseum-maps/index.html",
     "main.b7ad80a5.css.map": "/SingSingPrisonMuseum-maps/static/css/main.b7ad80a5.css.map",
-    "main.954a756e.js.map": "/SingSingPrisonMuseum-maps/static/js/main.954a756e.js.map"
+    "main.6156217d.js.map": "/SingSingPrisonMuseum-maps/static/js/main.6156217d.js.map"
   },
   "entrypoints": [
     "static/css/main.b7ad80a5.css",
-    "static/js/main.954a756e.js"
+    "static/js/main.6156217d.js"
   ]
 }
