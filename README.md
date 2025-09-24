@@ -30,7 +30,6 @@ The app visualizes changes in cell blocks, workspaces, and communal areas throug
 
 - **React.js** (frontend framework)  
 - **TypeScript** (type safety and maintainability)  
-- **Tailwind CSS** (styling and responsive design)  
 
 ---
 
@@ -38,7 +37,7 @@ The app visualizes changes in cell blocks, workspaces, and communal areas throug
 
 ```bash
 # Clone the repository
-git clone git@github.com:samweldon9393/sing-sing-maps-exhibit.git
+git clone https://github.com/samweldon9393/SingSingPrisonMuseum-maps.git
 
 # Install dependencies
 npm install
